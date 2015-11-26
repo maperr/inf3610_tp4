@@ -1,0 +1,9 @@
+matrix.o: \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.c \
+ c:\spacecodesign\spacestudio-2.7.0\toolchains\arm-unknown-linux-gnueabi\arm-unknown-linux-gnueabi\sysroot\usr\include\stdc-predef.h \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.c :
+ /c\spacecodesign\spacestudio-2.7.0\toolchains\arm-unknown-linux-gnueabi\arm-unknown-linux-gnueabi\sysroot\usr\include\stdc-predef.h :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h :

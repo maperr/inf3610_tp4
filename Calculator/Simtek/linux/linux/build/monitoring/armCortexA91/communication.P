@@ -1,0 +1,14 @@
+communication.o: communication.cpp \
+ c:\spacecodesign\spacestudio-2.7.0\toolchains\arm-unknown-linux-gnueabi\arm-unknown-linux-gnueabi\sysroot\usr\include\stdc-predef.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/PlatformDefinitions.h \
+ C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/EntryClass.h \
+ C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/TorConfiguration.h \
+ C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/CommunicationAPI.h \
+ C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/SpaceTypes.h
+communication.cpp :
+ /c\spacecodesign\spacestudio-2.7.0\toolchains\arm-unknown-linux-gnueabi\arm-unknown-linux-gnueabi\sysroot\usr\include\stdc-predef.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/PlatformDefinitions.h :
+ /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/EntryClass.h :
+ /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/TorConfiguration.h :
+ /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/CommunicationAPI.h :
+ /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/SpaceTypes.h :
