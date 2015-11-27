@@ -12,6 +12,7 @@
 #include "PlatformDefinitions.h"
 #include "ApplicationDefinitions.h"
 #include "SpaceDisplay.h"
+#include "matrix_def.h"
 #include "matrix.h"
 
 
@@ -116,10 +117,6 @@ void controller::readData(long* operand1, long* operand2, Operation* operation)
  *operand1 = getFirstOperand(raw);
  *operand2 = getSecondOperand(raw);
  *operation = getOperation(raw);
- if (*operand1 == 3 && *operand2 == 0 && *operation == MATRIX_MUL)
- {
-  sc_core::sc_stop();
- }
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -498,18 +495,23 @@ Operation controller::getOperation(unsigned char* ptr)
   return MULTIPLY;
  }
 
+ if (operation == '/')
+ {
+  if (GetVerbose())
+   SpacePrint("Division detected!\n");
+
+  return DIVIDE;
+ }
+
  if (operation == 'z')
  {
   if (GetVerbose())
+  {
    SpacePrint("Matrix multiplication detected!\n");
 
-  return MATRIX_MUL;
+  }
+  return MULTIPLY_MAT;
  }
-
- if (GetVerbose())
-  SpacePrint("Division detected!\n");
-
- return DIVIDE;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -562,35 +564,18 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
 
          break;
         }
-        case MATRIX_MUL:
+        case MULTIPLY_MAT:
         {
-
-         SpacePrint("Demarrage mult mat\n");
-
-         sendMatrix(operand1); /* operand1 refers to an index */
-         sendMatrix(operand2); /* operand2 refers to an index */
-
-         SpacePrint("Fin envoi matrice\n");
-
-         readMatrixMultiplicationResult();
-
-         SpacePrint("Fin recuperation matrice\n");
-
-
-
-
-         SpacePrint("%d z %d =\n", operand1, operand2);
-
-      //for(int i=0;i<MATRIX_ROWS;i++) {
-   //	for(int j=0;j<MATRIX_COLUMNS;j++){
-   //		SpacePrint("%5d ", m_matrix_result[(i*MATRIX_ROWS)+j]);
-      //}
-   //SpacePrint("\n");
-      //}
-
-
-         break;
+         SpacePrint("Allo\n");
+         sendMultiplicationMatOperand(operand1);
+   sendMultiplicationMatOperand(operand2);
+   unsigned long result [100 * 100];
+   readMultiplicationMatResult(result);
+   if(operand1 == 9 && operand2 == 9)
+    sc_stop();
+   break;
         }
+
     }
 
     return result;
@@ -638,12 +623,12 @@ void controller::sendDivisionOperand(long data)
 
 //////////////////////////////////////////////////////////////////////////////
 ///
-///	Send the matrix
+///	Send the matrix multiplication operand
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::sendMatrix(long index)
+void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(21, SPACE_BLOCKING, matrix_data[index], 30*30);
+ ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -704,13 +689,12 @@ long controller::readDivisionResult()
 
 //////////////////////////////////////////////////////////////////////////////
 ///
-///	Read the division's result
+///	Read the matrix multiplication's result
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::readMatrixMultiplicationResult()
+void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
 {
- ModuleRead(21, SPACE_BLOCKING, m_matrix_result, 30*30);
- //Stream2Memory(MATRIX_MUL_ID, 0x18000000+MATRIX_ROWS*MATRIX_COLUMNS*4, SPACE_BLOCKING, MATRIX_ROWS*MATRIX_COLUMNS*4);
+ ModuleRead(21, SPACE_BLOCKING, resultBuffer, 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////

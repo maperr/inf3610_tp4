@@ -96,7 +96,7 @@ int sc_main(int arg_count, char **arg_value){
 	ModuleSlaveAdapterFIFORead fifo_adap_divider1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_divider1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, DIVIDER_ID, 64, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_divider1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_divider1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, DIVIDER_ID, 64, false);
 	ModuleSlaveAdapterFIFORead fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, INPUT_READER_ID, 64, false);
-	ModuleSlaveAdapterFIFORead fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MATRIXMULTIPLIER_ID, 64, false);
+	ModuleSlaveAdapterFIFORead fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MATRIXMULTIPLIER_ID, 60, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, MATRIXMULTIPLIER_ID, 64, false);
 	ModuleSlaveAdapterFIFORead fifo_adap_multiplier1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_multiplier1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MULTIPLIER_ID, 64, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, MULTIPLIER_ID, 64, false);

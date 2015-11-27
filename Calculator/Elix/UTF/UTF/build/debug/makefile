@@ -29,11 +29,11 @@ LDFLAGS	    =	-g -static -Wl,--start-group -lSpace$(ARCH) -lSpaceLibRuntime$(ARC
 MAKEFILE = makefile
 
 ### Includes ###
-INCDIR	=	-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src' \
+INCDIR	=	-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug' \
+			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module' \
+			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application' \
+			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device' \
+			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/hw/include' \
@@ -77,11 +77,11 @@ DEPSCPP = $(patsubst %.cpp, %.P, $(SOURCES))
 DEPSC   = $(patsubst %.c, %.P, $(CSOURCES))
 
 ### Target ###
-TARGET_DIR	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/bin
-TARGET	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/bin/CalculatorUTF.exe
+TARGET_DIR	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/bin
+TARGET	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/bin/CalculatorUTF.exe
 
 ### Setting common path for modules, user devices and imported items ###
-VPATH = /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src
+VPATH = /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src
 
 ####### Implicit rules
 .SUFFIXES: .cpp .c .s

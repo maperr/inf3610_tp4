@@ -450,7 +450,7 @@
 			MSAFifoReadInterface_1_21: MSAFifoReadInterface-1-21@41005010 {
 				reg = <0x41005010 0x10>;
 				compatible = "space,fifo";
-				space,depth = <64>;
+				space,depth = <60>;
 				space,fast-interrupt;
 				interrupt-parent = <&XilinxPIC1>;
 				interrupts = <11>;

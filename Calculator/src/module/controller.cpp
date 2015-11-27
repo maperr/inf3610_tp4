@@ -568,15 +568,8 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         {
         	sendMultiplicationMatOperand(operand1);
 			sendMultiplicationMatOperand(operand2);
-			unsigned long result [MATRIX_ROWS * MATRIX_COLUMNS];
+			unsigned int *result = new unsigned int[MATRIX_ROWS * MATRIX_COLUMNS];
 			readMultiplicationMatResult(result);
-			#ifndef SPACE_GENX
-				SpacePrint("%d z %d = \n", operand1, operand2);
-				for(unsigned int i = 0; i < MATRIX_ROWS * MATRIX_COLUMNS; i++)
-				{
-					SpacePrint("%lu\n", result[i]);
-				}
-			#endif
 			if(operand1 == 9 && operand2 == 9)
 				sc_stop();
 			break;
@@ -698,7 +691,7 @@ long controller::readDivisionResult()
 ///	Read the matrix multiplication's result
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
+void controller::readMultiplicationMatResult(unsigned int *resultBuffer)
 {
 	ModuleRead(MATRIXMULTIPLIER_ID, SPACE_BLOCKING, resultBuffer, MATRIX_ROWS * MATRIX_COLUMNS);
 }

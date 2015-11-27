@@ -1,6 +1,6 @@
 matrix_mul.o: \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.cpp \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.cpp \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceBaseModule.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceGlobalMap.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceTypes.h \
@@ -317,14 +317,14 @@ matrix_mul.o: \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplayImpl.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/sc_stop_fwd.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceEndianSwapCustom.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplay.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.cpp :
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h :
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.cpp :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceBaseModule.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceGlobalMap.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceTypes.h :
@@ -641,9 +641,9 @@ matrix_mul.o: \
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplayImpl.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/sc_stop_fwd.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceEndianSwapCustom.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplay.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h :

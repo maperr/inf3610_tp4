@@ -8,8 +8,8 @@
 
 
 
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h" 1
-# 11 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h"
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h" 1
+# 11 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceBaseModule.h" 1
 
 
@@ -121,61 +121,64 @@ namespace tlm {
 # 7 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceBaseModule.h" 2
 
 class SpaceBaseModule;
-# 12 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h" 2
+# 12 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h" 2
 
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/systemc" 1
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/matrix_mul.h" 2
+# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/matrix_mul.h" 2
 
 class matrix_mul: public SpaceBaseModule {
  public:
-
      SC_HAS_PROCESS(matrix_mul);
-
   matrix_mul(sc_core::sc_module_name name, double period, sc_core::sc_time_unit unit, unsigned char id, unsigned char priority, bool verbose);
-
      void thread(void);
 
  private:
-     unsigned long* readOperand();
-  void sendResult(unsigned long* data);
-  unsigned long* multiplyMat(unsigned long*,unsigned long*);
+     void readOperand();
+  void sendResult();
+  void multiplyMat();
+
+  unsigned int* m_result;
+  unsigned int* m_operand1;
+  unsigned int* m_operand2;
 };
 # 9 "comms/matrix_mul.cpp" 2
 
 # 1 "temp/PlatformDefinitions.h" 1
 # 11 "comms/matrix_mul.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
 # 12 "comms/matrix_mul.cpp" 2
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceDisplay.h" 1
 # 13 "comms/matrix_mul.cpp" 2
 
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
 # 15 "comms/matrix_mul.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 1
 
 
 
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h" 1
-# 5 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h" 2
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
+# 5 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 2
 extern unsigned int* matrix_data[];
 # 16 "comms/matrix_mul.cpp" 2
 
-matrix_mul::matrix_mul(sc_core::sc_module_name name, double period, sc_core::sc_time_unit unit, unsigned char id, unsigned char priority, bool verbose)
-:SpaceBaseModule(name, period, unit, id, priority, verbose) {
+matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
+  sc_core::sc_time_unit unit, unsigned char id, unsigned char priority,
+  bool verbose) :
+  SpaceBaseModule(name, period, unit, id, priority, verbose) {
  SC_THREAD(thread);
+
+ set_stack_size(0x16000 + 100 * 100 * 4 * 3);
+
+ m_result = new unsigned int[100 * 100];
+ m_operand1 = new unsigned int[100 * 100];
+ m_operand2 = new unsigned int[100 * 100];
 }
 
 void matrix_mul::thread(void) {
-
- unsigned long* operand1;
- unsigned long* operand2;
- unsigned long* result;
-
- while(1) {
-  operand1 = readOperand();
-  operand2 = readOperand();
-  result = multiplyMat(operand1, operand2);
-  sendResult(result);
+ while (1) {
+  readOperand();
+  multiplyMat();
+  sendResult();
  }
 }
 
@@ -184,13 +187,12 @@ void matrix_mul::thread(void) {
 
 
 
-unsigned long* matrix_mul::readOperand()
-{
- unsigned long* data = new unsigned long[3 * 3];
-
- ModuleRead(1, SPACE_BLOCKING, data, 3 * 3);
-
-    return data;
+void matrix_mul::readOperand() {
+ int r = 0;
+ r++;
+ int j = r;
+ ModuleRead(1, SPACE_BLOCKING, m_operand1, 100 * 100);
+ ModuleRead(1, SPACE_BLOCKING, m_operand2, 100 * 100);
 }
 
 
@@ -198,25 +200,24 @@ unsigned long* matrix_mul::readOperand()
 
 
 
-void matrix_mul::sendResult(unsigned long* data)
-{
- ModuleWrite(1, SPACE_BLOCKING, data, 3 * 3);
+void matrix_mul::sendResult() {
+ SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[100 * 100 - 1]);
+ ModuleWrite(1, SPACE_BLOCKING, m_result, 100 * 100);
 }
 
-unsigned long* matrix_mul::multiplyMat(unsigned long* operand1, unsigned long* operand2)
-{
- unsigned long* result = new unsigned long[3 * 3];
- for(unsigned int i = 0; i < 3; i++)
+void matrix_mul::multiplyMat() {
+ unsigned int i, j, k, sum;
+
+ for (i = 0; i < 100; i++)
  {
-  for (unsigned int j = 0; j < 3; j++)
+  for (j = 0; j < 100; j++)
   {
-   unsigned long sum = 0;
-   for(unsigned int k = 0; k < 3; k++)
+   sum = 0;
+   for (k = 0; k < 100; k++)
    {
-    sum += operand1[i * 3 + k] * operand2[k * 3 + j];
+    sum += m_operand1[i * 100 + k] * m_operand2[k * 100 + j];
    }
-   result[i*3 + j] = sum;
+   m_result[i * 100 + j] = sum;
   }
  }
- return result;
 }

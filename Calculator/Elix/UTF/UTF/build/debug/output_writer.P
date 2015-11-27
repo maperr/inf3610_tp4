@@ -1,6 +1,6 @@
 output_writer.o: \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/output_writer.cpp \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/output_writer.h \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.cpp \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/systemc.h \
  c:\spacecodesign\spacestudio-2.7.0\toolchains\mingw\lib\gcc\mingw32\4.8.1\include\c++\cassert \
  c:\spacecodesign\spacestudio-2.7.0\toolchains\mingw\include\assert.h \
@@ -319,12 +319,12 @@ output_writer.o: \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplayImpl.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/sc_stop_fwd.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceEndianSwapCustom.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplay.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/XilinxUARTRegisters.h
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/output_writer.cpp :
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/output_writer.h :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.cpp :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/systemc.h :
  /c\spacecodesign\spacestudio-2.7.0\toolchains\mingw\lib\gcc\mingw32\4.8.1\include\c++\cassert :
  /c\spacecodesign\spacestudio-2.7.0\toolchains\mingw\include\assert.h :
@@ -643,7 +643,7 @@ output_writer.o: \
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplayImpl.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/sc_stop_fwd.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceEndianSwapCustom.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/SpaceDisplay.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/hw/include/XilinxUARTRegisters.h :

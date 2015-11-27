@@ -53,35 +53,35 @@
 ####################################
 	core 0:
 		l1-instruction
-			read hit:	97962
-			read miss:	2042 (6126 penalty cycles)
+			read hit:	562788
+			read miss:	3059 (9177 penalty cycles)
 			write hit:	0
 			write miss:	0 (0 penalty cycles)
 ----
 		l1-data
-			read hit:	1152
-			read miss:	713 (2139 penalty cycles)
-			write hit:	34
-			write miss:	45 (135 penalty cycles)
+			read hit:	1704
+			read miss:	754 (2262 penalty cycles)
+			write hit:	89
+			write miss:	49 (147 penalty cycles)
 ----
 	core 1:
 		l1-instruction
-			read hit:	10203801
-			read miss:	74295 (222885 penalty cycles)
+			read hit:	170491479
+			read miss:	87371 (262113 penalty cycles)
 			write hit:	0
 			write miss:	0 (0 penalty cycles)
 ----
 		l1-data
-			read hit:	430861
-			read miss:	18936 (56808 penalty cycles)
-			write hit:	21354
-			write miss:	2727 (8181 penalty cycles)
+			read hit:	406835
+			read miss:	36189 (108567 penalty cycles)
+			write hit:	27180
+			write miss:	12481 (37443 penalty cycles)
 ----
 	l2-both
-		read hit:	783334
-		read miss:	6730 (134600 penalty cycles)
-		write hit:	21232
-		write miss:	0 (0 penalty cycles)
+		read hit:	1098615
+		read miss:	20609 (412180 penalty cycles)
+		write hit:	100910
+		write miss:	2 (40 penalty cycles)
 ----
 ####################################
 ## Main memory statistic
@@ -97,7 +97,7 @@
 ####################################
 ## Cumulative report
 ####################################
-	read hit:	11517110
-	read miss:	102716 (422558 penalty cycles)
-	write hit:	42620
-	write miss:	2772 (8316 penalty cycles)
+	read hit:	172561421
+	read miss:	147982 (794299 penalty cycles)
+	write hit:	128179
+	write miss:	12532 (37630 penalty cycles)

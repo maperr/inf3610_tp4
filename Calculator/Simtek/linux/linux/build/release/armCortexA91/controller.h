@@ -18,7 +18,7 @@
 #include "errno.h"
 #include "string.h"
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO5_89(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO5_90(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -49,7 +49,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO5_89(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO3_101(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO3_102(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -80,7 +80,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO3_101(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO0_606(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO0_591(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -111,7 +111,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO0_606(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO6_616(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO6_601(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -142,7 +142,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO6_616(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO4_626(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO4_611(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -173,7 +173,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO4_626(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO2_636(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO2_621(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -204,7 +204,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO2_636(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO21_646(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO21_631(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -235,7 +235,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO21_646(unsigned char uc
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO0_658(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO0_643(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -266,7 +266,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO0_658(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO6_672(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO6_657(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -297,7 +297,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO6_672(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO4_686(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO4_671(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -328,7 +328,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO4_686(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO2_700(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO2_685(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -359,7 +359,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO2_700(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO21_712(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO21_697(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -405,14 +405,13 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO21_712(unsigned char ucD
 
 #include "systemc.h"
 #include "SpaceBaseModule.h"
-#include "matrix.h"
 
 typedef enum {
 	ADD,
 	SUBTRACTION,
 	MULTIPLY,
 	DIVIDE,
-	MATRIX_MUL
+	MULTIPLY_MAT
 } Operation;
 
 class controller : public SpaceBaseModule
@@ -436,7 +435,6 @@ class controller : public SpaceBaseModule
 		///
 		/// Members
 		///
-		unsigned int m_matrix_result[MATRIX_ROWS*MATRIX_COLUMNS];
 
 		void sendResult(long data);
 		void sendCharacter(unsigned char character);
@@ -469,17 +467,18 @@ class controller : public SpaceBaseModule
 		void sendSubtractionOperand(long data);
 		void sendMultiplicationOperand(long data);
 		void sendDivisionOperand(long data);
+		void sendMultiplicationMatOperand(unsigned long data);
 		long readAdditionResult();
 		long readSubtractionResult();
 		long readMultiplicationResult();
 		long readDivisionResult();
+		void readMultiplicationMatResult(unsigned long resultBuffer[]);
 		void init(unsigned char* ptr);
 		int atoi(unsigned char c);
 		unsigned char itoa(unsigned int x);
 		int getOrder(unsigned long data);
 		void displayMessage(char* message);
-		void sendMatrix(long index);
-		void readMatrixMultiplicationResult();
+
 };
 
 #endif

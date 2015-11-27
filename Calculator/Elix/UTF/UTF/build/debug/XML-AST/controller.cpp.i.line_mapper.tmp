@@ -2,8 +2,8 @@
 # 1 "<command-line>"
 # 1 "comms/controller.cpp"
 # 11 "comms/controller.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/controller.h" 1
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/controller.h"
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 1
+# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/systemc.h" 1
 
 
@@ -70,7 +70,7 @@ using std::strlen;
 using std::strpbrk;
 using std::strstr;
 using std::strtok;
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/controller.h" 2
+# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 2
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceBaseModule.h" 1
 
 
@@ -162,7 +162,7 @@ typedef enum
 
 
 class SpaceBaseModule;
-# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/module/controller.h" 2
+# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 2
 
 typedef enum {
  ADD,
@@ -241,18 +241,18 @@ class controller : public SpaceBaseModule
 # 12 "comms/controller.cpp" 2
 # 1 "temp/PlatformDefinitions.h" 1
 # 13 "comms/controller.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
 # 14 "comms/controller.cpp" 2
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceDisplay.h" 1
 # 15 "comms/controller.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
 # 16 "comms/controller.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h" 1
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 1
 
 
 
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix_def.h" 1
-# 5 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/import/src/matrix.h" 2
+# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
+# 5 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 2
 extern unsigned int* matrix_data[];
 # 17 "comms/controller.cpp" 2
 # 25 "comms/controller.cpp"
@@ -802,15 +802,8 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         {
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned long result [3 * 3];
+   unsigned long result [100 * 100];
    readMultiplicationMatResult(result);
-
-    SpacePrint("%d z %d = \n", operand1, operand2);
-    for(unsigned int i = 0; i < 3 * 3; i++)
-    {
-     SpacePrint("%lu\n", result[i]);
-    }
-
    if(operand1 == 9 && operand2 == 9)
     sc_stop();
    break;
@@ -868,7 +861,7 @@ void controller::sendDivisionOperand(long data)
 
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(4, SPACE_BLOCKING, matrix_data[data], 3 * 3);
+ ModuleWrite(4, SPACE_BLOCKING, matrix_data[data], 100 * 100);
 }
 
 
@@ -934,7 +927,7 @@ long controller::readDivisionResult()
 
 void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
 {
- ModuleRead(4, SPACE_BLOCKING, resultBuffer, 3 * 3);
+ ModuleRead(4, SPACE_BLOCKING, resultBuffer, 100 * 100);
 }
 
 

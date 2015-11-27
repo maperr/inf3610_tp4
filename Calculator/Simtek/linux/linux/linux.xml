@@ -222,6 +222,21 @@
 		<component
 			type="Module"
 			SubType="STANDARD"
+			ClassName="adder"
+			InstanceName="adder1"
+			HeaderFileName="Undefined"
+			id_key="ADDER_ID"
+			id="0"
+			prio_key="ADDER_PRIO"
+			prio="3"
+			verbose="false"
+			SystemClock="SysClock"
+			InterfaceClock="None">
+		</component>
+
+		<component
+			type="Module"
+			SubType="STANDARD"
 			ClassName="controller"
 			InstanceName="controller1"
 			HeaderFileName="Undefined"
@@ -229,6 +244,21 @@
 			id="1"
 			prio_key="CONTROLLER_PRIO"
 			prio="4"
+			verbose="false"
+			SystemClock="SysClock"
+			InterfaceClock="None">
+		</component>
+
+		<component
+			type="Module"
+			SubType="STANDARD"
+			ClassName="divider"
+			InstanceName="divider1"
+			HeaderFileName="Undefined"
+			id_key="DIVIDER_ID"
+			id="2"
+			prio_key="DIVIDER_PRIO"
+			prio="5"
 			verbose="false"
 			SystemClock="SysClock"
 			InterfaceClock="None">
@@ -267,6 +297,21 @@
 		<component
 			type="Module"
 			SubType="STANDARD"
+			ClassName="multiplier"
+			InstanceName="multiplier1"
+			HeaderFileName="Undefined"
+			id_key="MULTIPLIER_ID"
+			id="4"
+			prio_key="MULTIPLIER_PRIO"
+			prio="7"
+			verbose="false"
+			SystemClock="SysClock"
+			InterfaceClock="None">
+		</component>
+
+		<component
+			type="Module"
+			SubType="STANDARD"
 			ClassName="output_writer"
 			InstanceName="output_writer1"
 			HeaderFileName="Undefined"
@@ -274,6 +319,21 @@
 			id="5"
 			prio_key="OUTPUT_WRITER_PRIO"
 			prio="8"
+			verbose="false"
+			SystemClock="SysClock"
+			InterfaceClock="None">
+		</component>
+
+		<component
+			type="Module"
+			SubType="STANDARD"
+			ClassName="subtractor"
+			InstanceName="subtractor1"
+			HeaderFileName="Undefined"
+			id_key="SUBTRACTOR_ID"
+			id="6"
+			prio_key="SUBTRACTOR_PRIO"
+			prio="10"
 			verbose="false"
 			SystemClock="SysClock"
 			InterfaceClock="None">
@@ -356,66 +416,6 @@
 			ulBaseAddress="0x00000000"
 			ulHighAddress="0x00000000"
 			isFixRange="false">
-		</component>
-
-		<component
-			type="Module"
-			SubType="STANDARD"
-			ClassName="adder"
-			InstanceName="adder1"
-			HeaderFileName="Undefined"
-			id_key="ADDER_ID"
-			id="0"
-			prio_key="ADDER_PRIO"
-			prio="3"
-			verbose="false"
-			SystemClock="SysClock"
-			InterfaceClock="None">
-		</component>
-
-		<component
-			type="Module"
-			SubType="STANDARD"
-			ClassName="divider"
-			InstanceName="divider1"
-			HeaderFileName="Undefined"
-			id_key="DIVIDER_ID"
-			id="2"
-			prio_key="DIVIDER_PRIO"
-			prio="5"
-			verbose="false"
-			SystemClock="SysClock"
-			InterfaceClock="None">
-		</component>
-
-		<component
-			type="Module"
-			SubType="STANDARD"
-			ClassName="multiplier"
-			InstanceName="multiplier1"
-			HeaderFileName="Undefined"
-			id_key="MULTIPLIER_ID"
-			id="4"
-			prio_key="MULTIPLIER_PRIO"
-			prio="7"
-			verbose="false"
-			SystemClock="SysClock"
-			InterfaceClock="None">
-		</component>
-
-		<component
-			type="Module"
-			SubType="STANDARD"
-			ClassName="subtractor"
-			InstanceName="subtractor1"
-			HeaderFileName="Undefined"
-			id_key="SUBTRACTOR_ID"
-			id="6"
-			prio_key="SUBTRACTOR_PRIO"
-			prio="10"
-			verbose="false"
-			SystemClock="SysClock"
-			InterfaceClock="None">
 		</component>
 
 
@@ -1048,8 +1048,26 @@
 			<component
 				type="Module"
 				SubType="STANDARD"
+				ClassName="adder"
+				InstanceName="adder1">
+
+
+			</component>
+
+			<component
+				type="Module"
+				SubType="STANDARD"
 				ClassName="controller"
 				InstanceName="controller1">
+
+
+			</component>
+
+			<component
+				type="Module"
+				SubType="STANDARD"
+				ClassName="divider"
+				InstanceName="divider1">
 
 
 			</component>
@@ -1075,8 +1093,26 @@
 			<component
 				type="Module"
 				SubType="STANDARD"
+				ClassName="multiplier"
+				InstanceName="multiplier1">
+
+
+			</component>
+
+			<component
+				type="Module"
+				SubType="STANDARD"
 				ClassName="output_writer"
 				InstanceName="output_writer1">
+
+
+			</component>
+
+			<component
+				type="Module"
+				SubType="STANDARD"
+				ClassName="subtractor"
+				InstanceName="subtractor1">
 
 
 			</component>
@@ -1158,42 +1194,6 @@
 					</component>
 
 				</component>
-
-
-			</component>
-
-			<component
-				type="Module"
-				SubType="STANDARD"
-				ClassName="adder"
-				InstanceName="adder1">
-
-
-			</component>
-
-			<component
-				type="Module"
-				SubType="STANDARD"
-				ClassName="divider"
-				InstanceName="divider1">
-
-
-			</component>
-
-			<component
-				type="Module"
-				SubType="STANDARD"
-				ClassName="multiplier"
-				InstanceName="multiplier1">
-
-
-			</component>
-
-			<component
-				type="Module"
-				SubType="STANDARD"
-				ClassName="subtractor"
-				InstanceName="subtractor1">
 
 
 			</component>

@@ -66,8 +66,8 @@ int sc_main(int arg_count, char **arg_value){
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_divider1_AMBA_AXIBus_LT1_rdIF("S_AMBA_AXIBus_LT1_adap_divider1_AMBA_AXIBus_LT1_rdIF", 10, SC_NS, DIVIDER_ID, false);
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_divider1_AMBA_AXIBus_LT1_wrIF("S_AMBA_AXIBus_LT1_adap_divider1_AMBA_AXIBus_LT1_wrIF", 10, SC_NS, DIVIDER_ID, false);
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_input_reader1_AMBA_AXIBus_LT1_rdIF("S_AMBA_AXIBus_LT1_adap_input_reader1_AMBA_AXIBus_LT1_rdIF", 10, SC_NS, INPUT_READER_ID, false);
-	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF("S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF", 10, SC_NS, MATRIX_MUL_ID, false);
-	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF("S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF", 10, SC_NS, MATRIX_MUL_ID, false);
+	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF("S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF", 10, SC_NS, MATRIXMULTIPLIER_ID, false);
+	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF("S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF", 10, SC_NS, MATRIXMULTIPLIER_ID, false);
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_rdIF("S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_rdIF", 10, SC_NS, MULTIPLIER_ID, false);
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_wrIF("S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_wrIF", 10, SC_NS, MULTIPLIER_ID, false);
 	TFSlaveAdapter S_AMBA_AXIBus_LT1_adap_output_writer1_AMBA_AXIBus_LT1_wrIF("S_AMBA_AXIBus_LT1_adap_output_writer1_AMBA_AXIBus_LT1_wrIF", 10, SC_NS, OUTPUT_WRITER_ID, false);
@@ -79,8 +79,8 @@ int sc_main(int arg_count, char **arg_value){
 	ModuleSlaveAdapter adap_divider1_AMBA_AXIBus_LT1_wrIF("adap_divider1_AMBA_AXIBus_LT1_wrIF", DIVIDER_ID, false);
 	ModuleMasterAdapter adap_input_reader1("adap_input_reader1", 10, SC_NS, INPUT_READER_ID, INPUT_READER_PRIO, ChannelWidth4, (void*)&AMBA_AXIBus_LT1_addressinfo, false);
 	ModuleSlaveAdapter adap_input_reader1_AMBA_AXIBus_LT1_rdIF("adap_input_reader1_AMBA_AXIBus_LT1_rdIF", INPUT_READER_ID, false);
-	ModuleSlaveAdapter adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF("adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF", MATRIX_MUL_ID, false);
-	ModuleSlaveAdapter adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF("adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF", MATRIX_MUL_ID, false);
+	ModuleSlaveAdapter adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF("adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF", MATRIXMULTIPLIER_ID, false);
+	ModuleSlaveAdapter adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF("adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF", MATRIXMULTIPLIER_ID, false);
 	ModuleSlaveAdapter adap_multiplier1_AMBA_AXIBus_LT1_rdIF("adap_multiplier1_AMBA_AXIBus_LT1_rdIF", MULTIPLIER_ID, false);
 	ModuleSlaveAdapter adap_multiplier1_AMBA_AXIBus_LT1_wrIF("adap_multiplier1_AMBA_AXIBus_LT1_wrIF", MULTIPLIER_ID, false);
 	ModuleMasterAdapter adap_output_writer1("adap_output_writer1", 10, SC_NS, OUTPUT_WRITER_ID, OUTPUT_WRITER_PRIO, ChannelWidth4, (void*)&AMBA_AXIBus_LT1_addressinfo, false);
@@ -96,8 +96,8 @@ int sc_main(int arg_count, char **arg_value){
 	ModuleSlaveAdapterFIFORead fifo_adap_divider1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_divider1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, DIVIDER_ID, 64, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_divider1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_divider1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, DIVIDER_ID, 64, false);
 	ModuleSlaveAdapterFIFORead fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, INPUT_READER_ID, 64, false);
-	ModuleSlaveAdapterFIFORead fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MATRIX_MUL_ID, 64, false);
-	ModuleSlaveAdapterFIFOWrite fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, MATRIX_MUL_ID, 64, false);
+	ModuleSlaveAdapterFIFORead fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MATRIXMULTIPLIER_ID, 60, false);
+	ModuleSlaveAdapterFIFOWrite fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, MATRIXMULTIPLIER_ID, 64, false);
 	ModuleSlaveAdapterFIFORead fifo_adap_multiplier1_AMBA_AXIBus_LT1_rdIF0("fifo_adap_multiplier1_AMBA_AXIBus_LT1_rdIF0", 10, SC_NS, MULTIPLIER_ID, 64, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, MULTIPLIER_ID, 64, false);
 	ModuleSlaveAdapterFIFOWrite fifo_adap_output_writer1_AMBA_AXIBus_LT1_wrIF0("fifo_adap_output_writer1_AMBA_AXIBus_LT1_wrIF0", 10, SC_NS, OUTPUT_WRITER_ID, 64, false);
@@ -107,7 +107,7 @@ int sc_main(int arg_count, char **arg_value){
 	adder adder1("adder1", 10, SC_NS, ADDER_ID, ADDER_PRIO, false);
 	divider divider1("divider1", 10, SC_NS, DIVIDER_ID, DIVIDER_PRIO, false);
 	input_reader input_reader1("input_reader1", 10, SC_NS, INPUT_READER_ID, INPUT_READER_PRIO, false);
-	matrix_mul matrix_mul1("matrix_mul1", 10, SC_NS, MATRIX_MUL_ID, MATRIX_MUL_PRIO, false);
+	matrix_mul matrix_mul1("matrix_mul1", 10, SC_NS, MATRIXMULTIPLIER_ID, MATRIX_MUL_PRIO, false);
 	multiplier multiplier1("multiplier1", 10, SC_NS, MULTIPLIER_ID, MULTIPLIER_PRIO, false);
 	output_writer output_writer1("output_writer1", 10, SC_NS, OUTPUT_WRITER_ID, OUTPUT_WRITER_PRIO, false);
 	subtractor subtractor1("subtractor1", 10, SC_NS, SUBTRACTOR_ID, SUBTRACTOR_PRIO, false);

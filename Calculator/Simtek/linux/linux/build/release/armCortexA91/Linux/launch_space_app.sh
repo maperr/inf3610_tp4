@@ -1,8 +1,9 @@
 #!/bin/sh
 
 AUTOMATIC_LAUNCH=true
-IS_SW_DEBUGGING=false
+IS_SW_DEBUGGING=true
 
+./spaceUtils/ip_saver.elf
 
 if $AUTOMATIC_LAUNCH; then
 	sleep 1

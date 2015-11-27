@@ -9,17 +9,17 @@ DRIVERS_DESTINATION=$BASE_DESTINATION/spaceDrivers
 UTILS_DESTINATION=$BASE_DESTINATION/spaceUtils
 APP_DESTINATION=$BASE_DESTINATION/spaceApp
 
-INSMOD_SCRIPT="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/insmod_script.sh)"
-EXECUTABLE="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Calculator_armCortexA91.arm.elf)"
-STOP_SIMULATION="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/stop_simulation.elf)"
-IP_SAVER="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/ip_saver.elf)"
-CHANGE_MAC_ADD="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/change_mac_address.sh)"
-LAUNCH_SCRIPT="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/launch_space_app.sh)"
+INSMOD_SCRIPT="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/insmod_script.sh)"
+EXECUTABLE="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Calculator_armCortexA91.arm.elf)"
+STOP_SIMULATION="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/stop_simulation.elf)"
+IP_SAVER="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/ip_saver.elf)"
+CHANGE_MAC_ADD="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/change_mac_address.sh)"
+LAUNCH_SCRIPT="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/launch_space_app.sh)"
 
 RAMFS_BASE="$(cygpath C:/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/Linux3.6.0-digilent/rootfs.cpio)"
-RAMFS_MODIFIED="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/rootfs.cpio.gz)"
+RAMFS_MODIFIED="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/rootfs.cpio.gz)"
 
-LOGIN_SCRIPT_SRC="$(cygpath C:/Users/Arnaud/Desktop/Lab/Lab/Calculator/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/login_space.sh)"
+LOGIN_SCRIPT_SRC="$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/login_space.sh)"
 LOGIN_SCRIPT_DEST=/etc/rcS.d/S99login_space.sh
 
 # Extracting cpio file
@@ -43,6 +43,8 @@ if $IS_SIMULATION; then
 	mkdir -p $UTILS_DESTINATION
 	cp $STOP_SIMULATION $UTILS_DESTINATION
 	cp $IP_SAVER $UTILS_DESTINATION
+	cp "$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/Linux/launch_gdbserver.sh)" $APP_DESTINATION
+	cp "$(cygpath C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/release/armCortexA91/gdbserver_notifier.elf)" $UTILS_DESTINATION
 else
 	mkdir -p $UTILS_DESTINATION
 	cp $CHANGE_MAC_ADD $UTILS_DESTINATION

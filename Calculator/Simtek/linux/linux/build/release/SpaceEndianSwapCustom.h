@@ -10,7 +10,6 @@
 
 #include "ApplicationDefinitions.h"
 #include "PlatformDefinitions.h"
-#include "matrix_def.h"
 #include "xil_assert.h"
 #include "xil_io.h"
 #include "xil_types.h"

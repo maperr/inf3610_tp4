@@ -30,6 +30,7 @@
 #include "PlatformDefinitions.h"
 #include "ApplicationDefinitions.h"
 #include "SpaceDisplay.h"
+#include "matrix_def.h"
 #include "matrix.h"
 
 
@@ -104,7 +105,7 @@ void controller::sendResult(long data)
 void controller::sendCharacter(unsigned char character)
 {
  unsigned long data = (unsigned long)character;
- ModuleWrite_1TO5_89(5, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO5_90(5, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -116,7 +117,7 @@ unsigned long controller::readInput()
 {
  unsigned long data;
 
- ModuleRead_1TO3_101(3, SPACE_BLOCKING, &data);
+ ModuleRead_1TO3_102(3, SPACE_BLOCKING, &data);
 
  return data;
 }
@@ -134,10 +135,6 @@ void controller::readData(long* operand1, long* operand2, Operation* operation)
  *operand1 = getFirstOperand(raw);
  *operand2 = getSecondOperand(raw);
  *operation = getOperation(raw);
- if (*operand1 == 3 && *operand2 == 0 && *operation == MATRIX_MUL)
- {
-  sc_core::sc_stop();
- }
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -516,18 +513,23 @@ Operation controller::getOperation(unsigned char* ptr)
   return MULTIPLY;
  }
 
+ if (operation == '/')
+ {
+  if (GetVerbose())
+   SpacePrint("Division detected!\n");
+
+  return DIVIDE;
+ }
+
  if (operation == 'z')
  {
   if (GetVerbose())
+  {
    SpacePrint("Matrix multiplication detected!\n");
 
-  return MATRIX_MUL;
+  }
+  return MULTIPLY_MAT;
  }
-
- if (GetVerbose())
-  SpacePrint("Division detected!\n");
-
- return DIVIDE;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -580,35 +582,18 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
 
          break;
         }
-        case MATRIX_MUL:
+        case MULTIPLY_MAT:
         {
-
-         SpacePrint("Demarrage mult mat\n");
-
-         sendMatrix(operand1); /* operand1 refers to an index */
-         sendMatrix(operand2); /* operand2 refers to an index */
-
-         SpacePrint("Fin envoi matrice\n");
-
-         readMatrixMultiplicationResult();
-
-         SpacePrint("Fin recuperation matrice\n");
-
-
-
-
-         SpacePrint("%d z %d =\n", operand1, operand2);
-
-      //for(int i=0;i<MATRIX_ROWS;i++) {
-   //	for(int j=0;j<MATRIX_COLUMNS;j++){
-   //		SpacePrint("%5d ", m_matrix_result[(i*MATRIX_ROWS)+j]);
-      //}
-   //SpacePrint("\n");
-      //}
-
-
-         break;
+         SpacePrint("Allo\n");
+         sendMultiplicationMatOperand(operand1);
+   sendMultiplicationMatOperand(operand2);
+   unsigned long result [100 * 100];
+   readMultiplicationMatResult(result);
+   if(operand1 == 9 && operand2 == 9)
+    sc_stop();
+   break;
         }
+
     }
 
     return result;
@@ -621,7 +606,7 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendAdditionOperand(long data)
 {
- ModuleWrite_1TO0_606(0, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO0_591(0, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -631,7 +616,7 @@ void controller::sendAdditionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendSubtractionOperand(long data)
 {
- ModuleWrite_1TO6_616(6, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO6_601(6, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -641,7 +626,7 @@ void controller::sendSubtractionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationOperand(long data)
 {
- ModuleWrite_1TO4_626(4, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO4_611(4, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -651,17 +636,17 @@ void controller::sendMultiplicationOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendDivisionOperand(long data)
 {
- ModuleWrite_1TO2_636(2, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO2_621(2, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
 ///
-///	Send the matrix
+///	Send the matrix multiplication operand
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::sendMatrix(long index)
+void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite_1TO21_646(21, SPACE_BLOCKING, matrix_data[index], 30*30);
+ ModuleWrite_1TO21_631(21, SPACE_BLOCKING, matrix_data[data], 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -673,7 +658,7 @@ long controller::readAdditionResult()
 {
  long data;
 
- ModuleRead_1TO0_658(0, SPACE_BLOCKING, &data);
+ ModuleRead_1TO0_643(0, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -687,7 +672,7 @@ long controller::readSubtractionResult()
 {
  long data;
 
- ModuleRead_1TO6_672(6, SPACE_BLOCKING, &data);
+ ModuleRead_1TO6_657(6, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -701,7 +686,7 @@ long controller::readMultiplicationResult()
 {
  long data;
 
- ModuleRead_1TO4_686(4, SPACE_BLOCKING, &data);
+ ModuleRead_1TO4_671(4, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -715,20 +700,19 @@ long controller::readDivisionResult()
 {
  long data;
 
- ModuleRead_1TO2_700(2, SPACE_BLOCKING, &data);
+ ModuleRead_1TO2_685(2, SPACE_BLOCKING, &data);
 
     return data;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 ///
-///	Read the division's result
+///	Read the matrix multiplication's result
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::readMatrixMultiplicationResult()
+void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
 {
- ModuleRead_1TO21_712(21, SPACE_BLOCKING, m_matrix_result, 30*30);
- //Stream2Memory(MATRIX_MUL_ID, 0x18000000+MATRIX_ROWS*MATRIX_COLUMNS*4, SPACE_BLOCKING, MATRIX_ROWS*MATRIX_COLUMNS*4);
+ ModuleRead_1TO21_697(21, SPACE_BLOCKING, resultBuffer, 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////

@@ -568,15 +568,8 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         {
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned long result [3 * 3];
+   unsigned long result [100 * 100];
    readMultiplicationMatResult(result);
-
-    SpacePrint("%d z %d = \n", operand1, operand2);
-    for(unsigned int i = 0; i < 3 * 3; i++)
-    {
-     SpacePrint("%lu\n", result[i]);
-    }
-
    if(operand1 == 9 && operand2 == 9)
     sc_stop();
    break;
@@ -634,7 +627,7 @@ void controller::sendDivisionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(4, SPACE_BLOCKING, matrix_data[data], 3 * 3);
+ ModuleWrite(4, SPACE_BLOCKING, matrix_data[data], 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -700,7 +693,7 @@ long controller::readDivisionResult()
 //////////////////////////////////////////////////////////////////////////////
 void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
 {
- ModuleRead(4, SPACE_BLOCKING, resultBuffer, 3 * 3);
+ ModuleRead(4, SPACE_BLOCKING, resultBuffer, 100 * 100);
 }
 
 //////////////////////////////////////////////////////////////////////////////

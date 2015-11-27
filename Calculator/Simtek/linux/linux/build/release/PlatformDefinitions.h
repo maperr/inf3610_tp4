@@ -24,7 +24,7 @@
 #define CONTROLLER_ID   1
 #define DIVIDER_ID   2
 #define INPUT_READER_ID   3
-#define MATRIX_MUL_ID   21
+#define MATRIXMULTIPLIER_ID   21
 #define MULTIPLIER_ID   4
 #define OUTPUT_WRITER_ID   5
 #define SUBTRACTOR_ID   6

@@ -80,7 +80,7 @@ class controller : public SpaceBaseModule
 		long readSubtractionResult();
 		long readMultiplicationResult();
 		long readDivisionResult();
-		void readMultiplicationMatResult(unsigned long resultBuffer[]);
+		void readMultiplicationMatResult(unsigned int *resultBuffer);
 		void init(unsigned char* ptr);
 		int atoi(unsigned char c);
 		unsigned char itoa(unsigned int x);

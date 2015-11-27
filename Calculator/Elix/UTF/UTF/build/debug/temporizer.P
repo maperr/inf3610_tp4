@@ -1,6 +1,6 @@
 temporizer.o: \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device/temporizer.cpp \
- c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device/temporizer.h \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device/temporizer.cpp \
+ c:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device/temporizer.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/systemc.h \
  c:\spacecodesign\spacestudio-2.7.0\toolchains\mingw\lib\gcc\mingw32\4.8.1\include\c++\cassert \
  c:\spacecodesign\spacestudio-2.7.0\toolchains\mingw\include\assert.h \
@@ -310,10 +310,10 @@ temporizer.o: \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_sockets/tlm_target_socket.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_quantum/tlm_quantum.h \
  C:/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_quantum/tlm_global_quantum.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
- C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device/temporizer.cpp :
- /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/device/temporizer.h :
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h \
+ C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device/temporizer.cpp :
+ /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/device/temporizer.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/systemc.h :
  /c\spacecodesign\spacestudio-2.7.0\toolchains\mingw\lib\gcc\mingw32\4.8.1\include\c++\cassert :
  /c\spacecodesign\spacestudio-2.7.0\toolchains\mingw\include\assert.h :
@@ -623,5 +623,5 @@ temporizer.o: \
  /C/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_sockets/tlm_target_socket.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_quantum/tlm_quantum.h :
  /C/SpaceCodesign/SpaceStudio-2.7.0/SystemC/include/tlm_core/tlm_2/tlm_quantum/tlm_global_quantum.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
- /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/Calculator/src/application/ApplicationDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Elix/UTF/UTF/build/debug/PlatformDefinitions.h :
+ /C/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h :
