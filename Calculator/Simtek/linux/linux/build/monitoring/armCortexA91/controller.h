@@ -18,14 +18,16 @@
 #include "errno.h"
 #include "string.h"
 
+#define SPACE_IOC_MAGIC 0xAA
+#define SPACE_DMA_VIRTUAL _IOW(SPACE_IOC_MAGIC, 1, bool)
 template <typename T> inline eSpaceStatus ModuleWrite_1TO5_90(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
 
-	fd = open("/dev/fifo0x41009010", O_WRONLY);
+	fd = open("/dev/fifo0x41007010", O_WRONLY);
 	if(fd < 0)
-		printf("Error while opening fifo0x41009010, errno = %s\n", strerror(errno));
+		printf("Error while opening fifo0x41007010, errno = %s\n", strerror(errno));
 	unsigned char* pcData8 = (unsigned char*)ptData32;
 	ssize_t nb_transferred;
 	eSpaceStatus status = SPACE_OK;
@@ -80,7 +82,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO3_102(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO0_590(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO0_589(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -111,14 +113,14 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO0_590(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO6_600(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO6_599(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
 
-	fd = open("/dev/fifo0x4100b010", O_WRONLY);
+	fd = open("/dev/fifo0x41009010", O_WRONLY);
 	if(fd < 0)
-		printf("Error while opening fifo0x4100b010, errno = %s\n", strerror(errno));
+		printf("Error while opening fifo0x41009010, errno = %s\n", strerror(errno));
 	unsigned char* pcData8 = (unsigned char*)ptData32;
 	ssize_t nb_transferred;
 	eSpaceStatus status = SPACE_OK;
@@ -142,69 +144,7 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO6_600(unsigned char ucD
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleWrite_1TO4_610(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
-{
-	int fd;
-	unsigned long ulDataLength8=ucNbElements*sizeof(T);
-
-	fd = open("/dev/fifo0x41008010", O_WRONLY);
-	if(fd < 0)
-		printf("Error while opening fifo0x41008010, errno = %s\n", strerror(errno));
-	unsigned char* pcData8 = (unsigned char*)ptData32;
-	ssize_t nb_transferred;
-	eSpaceStatus status = SPACE_OK;
-	do {
-		nb_transferred = write(fd, (void*)pcData8, ulDataLength8);
-		if(nb_transferred == -1) {
-			if (errno == EINTR) {
-				continue;
-			} else if (errno == EAGAIN) {
-				status = SPACE_EMPTY;
-				break;
-			} else {
-				status = SPACE_ERROR;
-				break;
-			}
-		}
-		ulDataLength8 -= nb_transferred;
-		pcData8 += nb_transferred;
-	} while(ulDataLength8 != 0 && nb_transferred != 0);
-	close(fd);
-	return status;
-}
-
-template <typename T> inline eSpaceStatus ModuleWrite_1TO2_620(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
-{
-	int fd;
-	unsigned long ulDataLength8=ucNbElements*sizeof(T);
-
-	fd = open("/dev/fifo0x41003010", O_WRONLY);
-	if(fd < 0)
-		printf("Error while opening fifo0x41003010, errno = %s\n", strerror(errno));
-	unsigned char* pcData8 = (unsigned char*)ptData32;
-	ssize_t nb_transferred;
-	eSpaceStatus status = SPACE_OK;
-	do {
-		nb_transferred = write(fd, (void*)pcData8, ulDataLength8);
-		if(nb_transferred == -1) {
-			if (errno == EINTR) {
-				continue;
-			} else if (errno == EAGAIN) {
-				status = SPACE_EMPTY;
-				break;
-			} else {
-				status = SPACE_ERROR;
-				break;
-			}
-		}
-		ulDataLength8 -= nb_transferred;
-		pcData8 += nb_transferred;
-	} while(ulDataLength8 != 0 && nb_transferred != 0);
-	close(fd);
-	return status;
-}
-
-template <typename T> inline eSpaceStatus ModuleWrite_1TO21_630(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO4_609(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -235,7 +175,70 @@ template <typename T> inline eSpaceStatus ModuleWrite_1TO21_630(unsigned char uc
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO0_642(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleWrite_1TO2_619(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+{
+	int fd;
+	unsigned long ulDataLength8=ucNbElements*sizeof(T);
+
+	fd = open("/dev/fifo0x41003010", O_WRONLY);
+	if(fd < 0)
+		printf("Error while opening fifo0x41003010, errno = %s\n", strerror(errno));
+	unsigned char* pcData8 = (unsigned char*)ptData32;
+	ssize_t nb_transferred;
+	eSpaceStatus status = SPACE_OK;
+	do {
+		nb_transferred = write(fd, (void*)pcData8, ulDataLength8);
+		if(nb_transferred == -1) {
+			if (errno == EINTR) {
+				continue;
+			} else if (errno == EAGAIN) {
+				status = SPACE_EMPTY;
+				break;
+			} else {
+				status = SPACE_ERROR;
+				break;
+			}
+		}
+		ulDataLength8 -= nb_transferred;
+		pcData8 += nb_transferred;
+	} while(ulDataLength8 != 0 && nb_transferred != 0);
+	close(fd);
+	return status;
+}
+
+template <typename T> inline eSpaceStatus ModuleWrite_1TO21_629(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+{
+	int fd;
+	unsigned long ulDataLength8=ucNbElements*sizeof(T);
+
+	fd = open("/dev/dma0x4100a000", O_WRONLY);
+	if(fd < 0)
+		printf("Error while opening dma0x4100a000, errno = %s\n", strerror(errno));
+	unsigned char* pcData8 = (unsigned char*)ptData32;
+	ioctl(fd, SPACE_DMA_VIRTUAL, 1);
+	ssize_t nb_transferred;
+	eSpaceStatus status = SPACE_OK;
+	do {
+		nb_transferred = write(fd, (void*)pcData8, ulDataLength8);
+		if(nb_transferred == -1) {
+			if (errno == EINTR) {
+				continue;
+			} else if (errno == EAGAIN) {
+				status = SPACE_EMPTY;
+				break;
+			} else {
+				status = SPACE_ERROR;
+				break;
+			}
+		}
+		ulDataLength8 -= nb_transferred;
+		pcData8 += nb_transferred;
+	} while(ulDataLength8 != 0 && nb_transferred != 0);
+	close(fd);
+	return status;
+}
+
+template <typename T> inline eSpaceStatus ModuleRead_1TO0_641(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -266,14 +269,14 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO0_642(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO6_656(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO6_655(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
 
-	fd = open("/dev/fifo0x4100a010", O_RDONLY);
+	fd = open("/dev/fifo0x41008010", O_RDONLY);
 	if(fd < 0)
-		printf("Error while opening fifo0x4100a010, errno = %s\n", strerror(errno));
+		printf("Error while opening fifo0x41008010, errno = %s\n", strerror(errno));
 	unsigned char* pcData8 = (unsigned char*)ptData32;
 	ssize_t nb_transferred;
 	eSpaceStatus status = SPACE_OK;
@@ -297,14 +300,14 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO6_656(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO4_670(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO4_669(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
 
-	fd = open("/dev/fifo0x41007010", O_RDONLY);
+	fd = open("/dev/fifo0x41005010", O_RDONLY);
 	if(fd < 0)
-		printf("Error while opening fifo0x41007010, errno = %s\n", strerror(errno));
+		printf("Error while opening fifo0x41005010, errno = %s\n", strerror(errno));
 	unsigned char* pcData8 = (unsigned char*)ptData32;
 	ssize_t nb_transferred;
 	eSpaceStatus status = SPACE_OK;
@@ -328,7 +331,7 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO4_670(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO2_684(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO2_683(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
@@ -359,15 +362,16 @@ template <typename T> inline eSpaceStatus ModuleRead_1TO2_684(unsigned char ucDe
 	return status;
 }
 
-template <typename T> inline eSpaceStatus ModuleRead_1TO21_696(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
+template <typename T> inline eSpaceStatus ModuleRead_1TO21_695(unsigned char ucDestinationID, unsigned long ulTimeout, T* ptData32, unsigned long ucNbElements = 1)
 {
 	int fd;
 	unsigned long ulDataLength8=ucNbElements*sizeof(T);
 
-	fd = open("/dev/fifo0x41005010", O_RDONLY);
+	fd = open("/dev/dma0x4100a030", O_RDONLY);
 	if(fd < 0)
-		printf("Error while opening fifo0x41005010, errno = %s\n", strerror(errno));
+		printf("Error while opening dma0x4100a030, errno = %s\n", strerror(errno));
 	unsigned char* pcData8 = (unsigned char*)ptData32;
+	ioctl(fd, SPACE_DMA_VIRTUAL, 1);
 	ssize_t nb_transferred;
 	eSpaceStatus status = SPACE_OK;
 	do {

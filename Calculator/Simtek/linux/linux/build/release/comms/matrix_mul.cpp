@@ -20,11 +20,11 @@ matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
   SpaceBaseModule(name, period, unit, id, priority, verbose) {
  SC_THREAD(thread);
 
- set_stack_size(0x16000 + 100 * 100 * 4 * 3);
+ set_stack_size(0x16000 + 200 * 200 * 4 * 3);
 
- m_result = new unsigned int[100 * 100];
- m_operand1 = new unsigned int[100 * 100];
- m_operand2 = new unsigned int[100 * 100];
+ m_result = new unsigned int[200 * 200];
+ m_operand1 = new unsigned int[200 * 200];
+ m_operand2 = new unsigned int[200 * 200];
 }
 
 void matrix_mul::thread(void) {
@@ -41,11 +41,8 @@ void matrix_mul::thread(void) {
 ///
 //////////////////////////////////////////////////////////////////////////////
 void matrix_mul::readOperand() {
- int r = 0;
- r++;
- int j = r;
- ModuleRead(1, SPACE_BLOCKING, m_operand1, 100 * 100);
- ModuleRead(1, SPACE_BLOCKING, m_operand2, 100 * 100);
+ ModuleRead(1, SPACE_BLOCKING, m_operand1, 200 * 200);
+ ModuleRead(1, SPACE_BLOCKING, m_operand2, 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -54,23 +51,23 @@ void matrix_mul::readOperand() {
 ///
 //////////////////////////////////////////////////////////////////////////////
 void matrix_mul::sendResult() {
- SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[100 * 100 - 1]);
- ModuleWrite(1, SPACE_BLOCKING, m_result, 100 * 100);
+ SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[200 * 200 - 1]);
+ ModuleWrite(1, SPACE_BLOCKING, m_result, 200 * 200);
 }
 
 void matrix_mul::multiplyMat() {
  unsigned int i, j, k, sum;
 
- for (i = 0; i < 100; i++)
+ for (i = 0; i < 200; i++)
  {
-  for (j = 0; j < 100; j++)
+  for (j = 0; j < 200; j++)
   {
    sum = 0;
-   for (k = 0; k < 100; k++)
+   for (k = 0; k < 200; k++)
    {
-    sum += m_operand1[i * 100 + k] * m_operand2[k * 100 + j];
+    sum += m_operand1[i * 200 + k] * m_operand2[k * 200 + j];
    }
-   m_result[i * 100 + j] = sum;
+   m_result[i * 200 + j] = sum;
   }
  }
 }

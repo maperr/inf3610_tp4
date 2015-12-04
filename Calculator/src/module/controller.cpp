@@ -570,8 +570,7 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
 			sendMultiplicationMatOperand(operand2);
 			unsigned int *result = new unsigned int[MATRIX_ROWS * MATRIX_COLUMNS];
 			readMultiplicationMatResult(result);
-			if(operand1 == 9 && operand2 == 9)
-				sc_stop();
+			sc_stop();
 			break;
         }
 

@@ -17,14 +17,17 @@
 
 // Platform specific files
 #include "AMBA_AXIBus_LT.h"
+#include "AXIDMA.h"
 #include "DebugModule.h"
 #include "ISSAdapter.h"
+#include "InterfaceRange.h"
 #include "ModuleMasterAdapter.h"
 #include "ModuleMonitor.h"
 #include "ModuleSlaveAdapter.h"
 #include "ModuleSlaveAdapterFIFORead.h"
 #include "ModuleSlaveAdapterFIFOWrite.h"
 #include "ResetManager.h"
+#include "StreamFIFO.h"
 #include "TFMasterAdapter.h"
 #include "TFSlaveAdapter.h"
 #include "UserDeviceExternalIOSlave.h"

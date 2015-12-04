@@ -9,13 +9,13 @@
 ################################################################################
 MODULE_WRITE	5	true	-1	90	unsigned+long
 MODULE_READ	3	true	-1	102	unsigned+long
-MODULE_WRITE	0	true	-1	590	long
-MODULE_WRITE	6	true	-1	600	long
-MODULE_WRITE	4	true	-1	610	long
-MODULE_WRITE	2	true	-1	620	long
-MODULE_WRITE	21	true	400	630	unsigned+int
-MODULE_READ	0	true	-1	642	long
-MODULE_READ	6	true	-1	656	long
-MODULE_READ	4	true	-1	670	long
-MODULE_READ	2	true	-1	684	long
-MODULE_READ	21	true	400	696	unsigned+int
+MODULE_WRITE	0	true	-1	589	long
+MODULE_WRITE	6	true	-1	599	long
+MODULE_WRITE	4	true	-1	609	long
+MODULE_WRITE	2	true	-1	619	long
+MODULE_WRITE	21	true	160000	629	unsigned+int
+MODULE_READ	0	true	-1	641	long
+MODULE_READ	6	true	-1	655	long
+MODULE_READ	4	true	-1	669	long
+MODULE_READ	2	true	-1	683	long
+MODULE_READ	21	true	160000	695	unsigned+int

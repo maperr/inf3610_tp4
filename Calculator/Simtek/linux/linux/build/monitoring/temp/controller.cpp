@@ -568,10 +568,9 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         {
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned int *result = new unsigned int[10 * 10];
+   unsigned int *result = new unsigned int[200 * 200];
    readMultiplicationMatResult(result);
-   if(operand1 == 9 && operand2 == 9)
-    sc_stop();
+   sc_stop();
    break;
         }
 
@@ -627,7 +626,7 @@ void controller::sendDivisionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 10 * 10);
+ ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -693,7 +692,7 @@ long controller::readDivisionResult()
 //////////////////////////////////////////////////////////////////////////////
 void controller::readMultiplicationMatResult(unsigned int *resultBuffer)
 {
- ModuleRead(21, SPACE_BLOCKING, resultBuffer, 10 * 10);
+ ModuleRead(21, SPACE_BLOCKING, resultBuffer, 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////

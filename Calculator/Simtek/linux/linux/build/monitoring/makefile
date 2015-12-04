@@ -57,10 +57,10 @@ PLUGINS =
 SOURCES	=	adder.cpp \
 			divider.cpp \
 			input_reader.cpp \
-			matrix_mul.cpp \
 			multiplier.cpp \
 			output_writer.cpp \
 			subtractor.cpp \
+			matrix_mul.cpp \
 			main.cpp \
 			bus_mapping.cpp \
 			CommandGenerator.cpp \

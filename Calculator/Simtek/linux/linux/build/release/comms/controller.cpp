@@ -566,13 +566,11 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         }
         case MULTIPLY_MAT:
         {
-         SpacePrint("Allo\n");
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned long result [100 * 100];
+   unsigned int *result = new unsigned int[200 * 200];
    readMultiplicationMatResult(result);
-   if(operand1 == 9 && operand2 == 9)
-    sc_stop();
+   sc_stop();
    break;
         }
 
@@ -628,7 +626,7 @@ void controller::sendDivisionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 100 * 100);
+ ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -692,9 +690,9 @@ long controller::readDivisionResult()
 ///	Read the matrix multiplication's result
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
+void controller::readMultiplicationMatResult(unsigned int *resultBuffer)
 {
- ModuleRead(21, SPACE_BLOCKING, resultBuffer, 100 * 100);
+ ModuleRead(21, SPACE_BLOCKING, resultBuffer, 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////

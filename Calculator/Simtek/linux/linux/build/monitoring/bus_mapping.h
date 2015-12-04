@@ -18,5 +18,6 @@ using namespace SpaceGlobalMap;
 #ifndef BUS_MAPPING
 
 	extern AddressInfo AMBA_AXIBus_LT1_addressinfo;
+	extern AddressInfo armCortexA91_HP0_AMBA_AXIBus_LT1_addressinfo;
 
 #endif

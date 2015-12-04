@@ -348,13 +348,54 @@
 				#interrupt-cells = <1>;
 			};
 
+			dma_controller1_matrix_mul1: dma_controller1_matrix_mul1@4100a000 {
+				reg = <0x4100A000 0x2000>;
+				compatible = "xlnx-lkm,axi-dma";
+				#address-cells = <1>;
+				#size-cells = <1>;
+
+				dma_channel_1_21_mm2s: dma-channel-1-21-mm2s@4100a000 {
+					reg = <0x4100A000 0x30>;
+					compatible = "xlnx,axi-dma-mm2s-channel";
+					xlnx,datawidth = <32>;
+					xlnx,device-id = <24>;
+					interrupt-parent = <&XilinxPIC1>;
+					interrupts = <10>;
+				};
+
+				dma_channel_21_1_s2mm: dma-channel-21-1-s2mm@4100a030 {
+					reg = <0x4100A030 0x30>;
+					compatible = "xlnx,axi-dma-s2mm-channel";
+					xlnx,datawidth = <32>;
+					xlnx,device-id = <24>;
+					interrupt-parent = <&XilinxPIC1>;
+					interrupts = <11>;
+				};
+			};
+
+			dma_controller1_matrix_mul1_mm2s: dma_controller1_matrix_mul1-mm2s@4100a000 {
+				reg = <0x4100A000 0x30>;
+				compatible = "space,dma";
+				space,device-id = <24>;
+				space,direction = <1>;
+				space,has-interrupt;
+			};
+
+			dma_controller1_matrix_mul1_s2mm: dma_controller1_matrix_mul1-s2mm@4100a030 {
+				reg = <0x4100A030 0x30>;
+				compatible = "space,dma";
+				space,device-id = <24>;
+				space,direction = <2>;
+				space,has-interrupt;
+			};
+
 			MSAFifoReadInterface_1_0: MSAFifoReadInterface-1-0@41000010 {
 				reg = <0x41000010 0x10>;
 				compatible = "space,fifo";
 				space,depth = <64>;
 				space,fast-interrupt;
 				interrupt-parent = <&XilinxPIC1>;
-				interrupts = <7>;
+				interrupts = <6>;
 			};
 
 			MSAFifoWriteInterface_1_0: MSAFifoWriteInterface-1-0@41001010 {
@@ -375,8 +416,8 @@
 				interrupts = <5>;
 			};
 
-			MSAFifoWriteInterface_1_4: MSAFifoWriteInterface-1-4@41008010 {
-				reg = <0x41008010 0x10>;
+			MSAFifoWriteInterface_1_4: MSAFifoWriteInterface-1-4@41006010 {
+				reg = <0x41006010 0x10>;
 				compatible = "space,fifo";
 				space,depth = <64>;
 				space,fast-interrupt;
@@ -384,8 +425,8 @@
 				interrupts = <4>;
 			};
 
-			MSAFifoWriteInterface_1_5: MSAFifoWriteInterface-1-5@41009010 {
-				reg = <0x41009010 0x10>;
+			MSAFifoWriteInterface_1_5: MSAFifoWriteInterface-1-5@41007010 {
+				reg = <0x41007010 0x10>;
 				compatible = "space,fifo";
 				space,depth = <64>;
 				space,fast-interrupt;
@@ -393,22 +434,13 @@
 				interrupts = <0>;
 			};
 
-			MSAFifoWriteInterface_1_6: MSAFifoWriteInterface-1-6@4100b010 {
-				reg = <0x4100B010 0x10>;
+			MSAFifoWriteInterface_1_6: MSAFifoWriteInterface-1-6@41009010 {
+				reg = <0x41009010 0x10>;
 				compatible = "space,fifo";
 				space,depth = <64>;
 				space,fast-interrupt;
 				interrupt-parent = <&XilinxPIC1>;
 				interrupts = <3>;
-			};
-
-			MSAFifoWriteInterface_1_21: MSAFifoWriteInterface-1-21@41006010 {
-				reg = <0x41006010 0x10>;
-				compatible = "space,fifo";
-				space,depth = <64>;
-				space,fast-interrupt;
-				interrupt-parent = <&XilinxPIC1>;
-				interrupts = <6>;
 			};
 
 			MSAFifoReadInterface_1_2: MSAFifoReadInterface-1-2@41002010 {
@@ -417,7 +449,7 @@
 				space,depth = <64>;
 				space,fast-interrupt;
 				interrupt-parent = <&XilinxPIC1>;
-				interrupts = <10>;
+				interrupts = <9>;
 			};
 
 			MSAFifoReadInterface_1_3: MSAFifoReadInterface-1-3@41004010 {
@@ -429,17 +461,8 @@
 				interrupts = <1>;
 			};
 
-			MSAFifoReadInterface_1_4: MSAFifoReadInterface-1-4@41007010 {
-				reg = <0x41007010 0x10>;
-				compatible = "space,fifo";
-				space,depth = <64>;
-				space,fast-interrupt;
-				interrupt-parent = <&XilinxPIC1>;
-				interrupts = <9>;
-			};
-
-			MSAFifoReadInterface_1_6: MSAFifoReadInterface-1-6@4100a010 {
-				reg = <0x4100A010 0x10>;
+			MSAFifoReadInterface_1_4: MSAFifoReadInterface-1-4@41005010 {
+				reg = <0x41005010 0x10>;
 				compatible = "space,fifo";
 				space,depth = <64>;
 				space,fast-interrupt;
@@ -447,13 +470,13 @@
 				interrupts = <8>;
 			};
 
-			MSAFifoReadInterface_1_21: MSAFifoReadInterface-1-21@41005010 {
-				reg = <0x41005010 0x10>;
+			MSAFifoReadInterface_1_6: MSAFifoReadInterface-1-6@41008010 {
+				reg = <0x41008010 0x10>;
 				compatible = "space,fifo";
-				space,depth = <60>;
+				space,depth = <64>;
 				space,fast-interrupt;
 				interrupt-parent = <&XilinxPIC1>;
-				interrupts = <11>;
+				interrupts = <7>;
 			};
 
 		};

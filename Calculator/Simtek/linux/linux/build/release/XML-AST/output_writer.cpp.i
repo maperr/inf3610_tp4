@@ -2,8 +2,8 @@
 # 1 "<command-line>"
 # 1 "comms/output_writer.cpp"
 # 11 "comms/output_writer.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h" 1
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/output_writer.h" 1
+# 14 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/output_writer.h"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/systemc.h" 1
 
 
@@ -70,7 +70,7 @@ using std::strlen;
 using std::strpbrk;
 using std::strstr;
 using std::strtok;
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h" 2
+# 15 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/output_writer.h" 2
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceBaseModule.h" 1
 
 
@@ -162,7 +162,7 @@ typedef enum
 
 
 class SpaceBaseModule;
-# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/output_writer.h" 2
+# 16 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/output_writer.h" 2
 
 class output_writer : public SpaceBaseModule
 {
@@ -191,7 +191,7 @@ class output_writer : public SpaceBaseModule
 # 12 "comms/output_writer.cpp" 2
 # 1 "temp/PlatformDefinitions.h" 1
 # 13 "comms/output_writer.cpp" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
 # 14 "comms/output_writer.cpp" 2
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceDisplay.h" 1
 # 15 "comms/output_writer.cpp" 2

@@ -23,9 +23,9 @@ class matrix_mul: public SpaceBaseModule {
 		void sendResult();
 		void multiplyMat();
 		
-		unsigned int* m_result;
-		unsigned int* m_operand1;
-		unsigned int* m_operand2;
+		unsigned int *m_result;
+		unsigned int *m_operand1;
+		unsigned int *m_operand2;
 };
 
 #endif

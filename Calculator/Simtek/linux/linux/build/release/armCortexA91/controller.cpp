@@ -584,13 +584,11 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         }
         case MULTIPLY_MAT:
         {
-         SpacePrint("Allo\n");
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned long result [100 * 100];
+   unsigned int *result = new unsigned int[200 * 200];
    readMultiplicationMatResult(result);
-   if(operand1 == 9 && operand2 == 9)
-    sc_stop();
+   sc_stop();
    break;
         }
 
@@ -606,7 +604,7 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendAdditionOperand(long data)
 {
- ModuleWrite_1TO0_591(0, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO0_589(0, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -616,7 +614,7 @@ void controller::sendAdditionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendSubtractionOperand(long data)
 {
- ModuleWrite_1TO6_601(6, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO6_599(6, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -626,7 +624,7 @@ void controller::sendSubtractionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationOperand(long data)
 {
- ModuleWrite_1TO4_611(4, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO4_609(4, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -636,7 +634,7 @@ void controller::sendMultiplicationOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendDivisionOperand(long data)
 {
- ModuleWrite_1TO2_621(2, SPACE_BLOCKING, &data);
+ ModuleWrite_1TO2_619(2, SPACE_BLOCKING, &data);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -646,7 +644,7 @@ void controller::sendDivisionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite_1TO21_631(21, SPACE_BLOCKING, matrix_data[data], 100 * 100);
+ ModuleWrite_1TO21_629(21, SPACE_BLOCKING, matrix_data[data], 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -658,7 +656,7 @@ long controller::readAdditionResult()
 {
  long data;
 
- ModuleRead_1TO0_643(0, SPACE_BLOCKING, &data);
+ ModuleRead_1TO0_641(0, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -672,7 +670,7 @@ long controller::readSubtractionResult()
 {
  long data;
 
- ModuleRead_1TO6_657(6, SPACE_BLOCKING, &data);
+ ModuleRead_1TO6_655(6, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -686,7 +684,7 @@ long controller::readMultiplicationResult()
 {
  long data;
 
- ModuleRead_1TO4_671(4, SPACE_BLOCKING, &data);
+ ModuleRead_1TO4_669(4, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -700,7 +698,7 @@ long controller::readDivisionResult()
 {
  long data;
 
- ModuleRead_1TO2_685(2, SPACE_BLOCKING, &data);
+ ModuleRead_1TO2_683(2, SPACE_BLOCKING, &data);
 
     return data;
 }
@@ -710,9 +708,9 @@ long controller::readDivisionResult()
 ///	Read the matrix multiplication's result
 ///
 //////////////////////////////////////////////////////////////////////////////
-void controller::readMultiplicationMatResult(unsigned long resultBuffer[])
+void controller::readMultiplicationMatResult(unsigned int *resultBuffer)
 {
- ModuleRead_1TO21_697(21, SPACE_BLOCKING, resultBuffer, 100 * 100);
+ ModuleRead_1TO21_695(21, SPACE_BLOCKING, resultBuffer, 200 * 200);
 }
 
 //////////////////////////////////////////////////////////////////////////////

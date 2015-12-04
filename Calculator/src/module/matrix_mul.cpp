@@ -40,7 +40,7 @@ void matrix_mul::thread(void) {
 ///	Read an operand
 ///
 //////////////////////////////////////////////////////////////////////////////
-//comment ++++
+//yfgfygdfy
 void matrix_mul::readOperand() {
 	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand1, MATRIX_ROWS * MATRIX_COLUMNS);
 	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand2, MATRIX_ROWS * MATRIX_COLUMNS);

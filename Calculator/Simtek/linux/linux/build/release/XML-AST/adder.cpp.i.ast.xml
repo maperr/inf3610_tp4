@@ -2391,155 +2391,155 @@
     </declaration>
   </external_declaration>
   <external_declaration column="22"
-    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
     idref="1372" line="17">
     <declaration column="22"
-      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
       idref="1374" line="17">
       <declaration_specifiers column="22"
-        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
         idref="1378" line="17">
         <class_specifier column="22" extSCModule="true"
-          file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+          file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
           idref="1380" keyword="class" line="17" name="adder">
           <base_clause column="7"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1382" line="17">
             <base_specifier column="13"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1384" line="17" name="SpaceBaseModule">
               <base_class_access_specifier column="13"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1386" line="17" name="public"/>
             </base_specifier>
           </base_clause>
           <member_declaration column="1"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1388" line="19">
             <access_specifier column="1"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1390" line="19" name="public"/>
           </member_declaration>
           <member_declaration column="8"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1392" line="21"/>
           <member_declaration column="24"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1394" line="26">
             <ctor_definition column="24"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1396" line="26">
               <qualified_id column="24"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1398" line="26" name="adder"/>
               <parameter_list column="8"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1400" line="26">
                 <parameter_declaration column="8"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1402" line="26">
                   <declaration_specifiers column="8"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1404" line="26">
                     <builtin_type_specifier column="8"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1406" line="26" name="sc_module_name"/>
                   </declaration_specifiers>
                   <declarator column="9"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1408" line="26">
                     <qualified_id column="9"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1410" line="26" name="zName"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="29"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1412" line="26">
                   <declaration_specifiers column="29"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1414" line="26">
                     <builtin_type_specifier column="29"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1416" line="26" name="double"/>
                   </declaration_specifiers>
                   <declarator column="31"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1418" line="26">
                     <qualified_id column="31"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1420" line="26" name="dClockPeriod"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="50"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1422" line="26">
                   <declaration_specifiers column="50"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1424" line="26">
                     <builtin_type_specifier column="50"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1426" line="26" name="sc_time_unit"/>
                   </declaration_specifiers>
                   <declarator column="52"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1428" line="26">
                     <qualified_id column="52"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1430" line="26" name="Unit"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="69"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1432" line="26">
                   <declaration_specifiers column="69"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1434" line="26">
                     <builtin_type_specifier column="69"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1436" line="26" name="unsigned char"/>
                   </declaration_specifiers>
                   <declarator column="80"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1438" line="26">
                     <qualified_id column="80"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1440" line="26" name="ucID"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="89"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1442" line="26">
                   <declaration_specifiers column="89"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1444" line="26">
                     <builtin_type_specifier column="89"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1446" line="26" name="unsigned char"/>
                   </declaration_specifiers>
                   <declarator column="100"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1448" line="26">
                     <qualified_id column="100"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1450" line="26" name="ucPriority"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="115"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1452" line="26">
                   <declaration_specifiers column="115"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1454" line="26">
                     <builtin_type_specifier column="115"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1456" line="26" name="bool"/>
                   </declaration_specifiers>
                   <declarator column="117"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1458" line="26">
                     <qualified_id column="117"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1460" line="26" name="bVerbose"/>
                   </declarator>
                 </parameter_declaration>
@@ -2547,39 +2547,39 @@
             </ctor_definition>
           </member_declaration>
           <member_declaration column="131"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1462" line="31">
             <function_definition column="131"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1464" line="31">
               <declaration_specifiers column="131"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1466" line="31">
                 <builtin_type_specifier column="131"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1468" line="31" name="void"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1470" line="31">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1472" line="31" name="thread"/>
                 <parameter_list column="14"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1474" line="31">
                   <parameter_declaration column="14"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1476" line="31">
                     <declaration_specifiers column="14"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1478" line="31">
                       <builtin_type_specifier column="14"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1480" line="31" name="void"/>
                     </declaration_specifiers>
                     <abstract_declarator column="15"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1482" line="31"/>
                   </parameter_declaration>
                 </parameter_list>
@@ -2587,67 +2587,67 @@
             </function_definition>
           </member_declaration>
           <member_declaration column="20"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1484" line="33">
             <access_specifier column="20"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1486" line="33" name="private"/>
           </member_declaration>
           <member_declaration column="9"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1488" line="38">
             <function_definition column="9"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1490" line="38">
               <declaration_specifiers column="9"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1492" line="38">
                 <builtin_type_specifier column="9"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1494" line="38" name="long"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1496" line="38">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1498" line="38" name="add"/>
                 <parameter_list column="11"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1500" line="38">
                   <parameter_declaration column="11"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1502" line="38">
                     <declaration_specifiers column="11"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1504" line="38">
                       <builtin_type_specifier column="11"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1506" line="38" name="long"/>
                     </declaration_specifiers>
                     <declarator column="12"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1508" line="38">
                       <qualified_id column="12"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1510" line="38" name="operand1"/>
                     </declarator>
                   </parameter_declaration>
                   <parameter_declaration column="25"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1512" line="38">
                     <declaration_specifiers column="25"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1514" line="38">
                       <builtin_type_specifier column="25"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1516" line="38" name="long"/>
                     </declaration_specifiers>
                     <declarator column="27"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1518" line="38">
                       <qualified_id column="27"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1520" line="38" name="operand2"/>
                     </declarator>
                   </parameter_declaration>
@@ -2656,64 +2656,64 @@
             </function_definition>
           </member_declaration>
           <member_declaration column="41"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1522" line="39">
             <function_definition column="41"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1524" line="39">
               <declaration_specifiers column="41"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1526" line="39">
                 <builtin_type_specifier column="41"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1528" line="39" name="long"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1530" line="39">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1532" line="39" name="readOperand"/>
               </function_declarator>
             </function_definition>
           </member_declaration>
           <member_declaration column="21"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
             idref="1534" line="40">
             <function_definition column="21"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
               idref="1536" line="40">
               <declaration_specifiers column="21"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1538" line="40">
                 <builtin_type_specifier column="21"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1540" line="40" name="void"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                 idref="1542" line="40">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1544" line="40" name="sendResult"/>
                 <parameter_list column="18"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                   idref="1546" line="40">
                   <parameter_declaration column="18"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                     idref="1548" line="40">
                     <declaration_specifiers column="18"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1550" line="40">
                       <builtin_type_specifier column="18"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1552" line="40" name="long"/>
                     </declaration_specifiers>
                     <declarator column="19"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                       idref="1554" line="40">
                       <qualified_id column="19"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\adder.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\adder.h"
                         idref="1556" line="40" name="data"/>
                     </declarator>
                   </parameter_declaration>

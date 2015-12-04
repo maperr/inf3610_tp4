@@ -137,9 +137,9 @@ class matrix_mul: public SpaceBaseModule {
   void sendResult();
   void multiplyMat();
 
-  unsigned int* m_result;
-  unsigned int* m_operand1;
-  unsigned int* m_operand2;
+  unsigned int *m_result;
+  unsigned int *m_operand1;
+  unsigned int *m_operand2;
 };
 # 9 "comms/matrix_mul.cpp" 2
 
@@ -167,11 +167,11 @@ matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
   SpaceBaseModule(name, period, unit, id, priority, verbose) {
  SC_THREAD(thread);
 
- set_stack_size(0x16000 + 10 * 10 * 4 * 3);
+ set_stack_size(0x16000 + 200 * 200 * 4 * 3);
 
- m_result = new unsigned int[10 * 10];
- m_operand1 = new unsigned int[10 * 10];
- m_operand2 = new unsigned int[10 * 10];
+ m_result = new unsigned int[200 * 200];
+ m_operand1 = new unsigned int[200 * 200];
+ m_operand2 = new unsigned int[200 * 200];
 }
 
 void matrix_mul::thread(void) {
@@ -189,8 +189,8 @@ void matrix_mul::thread(void) {
 
 
 void matrix_mul::readOperand() {
- ModuleRead(1, SPACE_BLOCKING, m_operand1, 10 * 10);
- ModuleRead(1, SPACE_BLOCKING, m_operand2, 10 * 10);
+ ModuleRead(1, SPACE_BLOCKING, m_operand1, 200 * 200);
+ ModuleRead(1, SPACE_BLOCKING, m_operand2, 200 * 200);
 }
 
 
@@ -199,23 +199,23 @@ void matrix_mul::readOperand() {
 
 
 void matrix_mul::sendResult() {
- SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[10 * 10 - 1]);
- ModuleWrite(1, SPACE_BLOCKING, m_result, 10 * 10);
+ SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[200 * 200 - 1]);
+ ModuleWrite(1, SPACE_BLOCKING, m_result, 200 * 200);
 }
 
 void matrix_mul::multiplyMat() {
  unsigned int i, j, k, sum;
 
- for (i = 0; i < 10; i++)
+ for (i = 0; i < 200; i++)
  {
-  for (j = 0; j < 10; j++)
+  for (j = 0; j < 200; j++)
   {
    sum = 0;
-   for (k = 0; k < 10; k++)
+   for (k = 0; k < 200; k++)
    {
-    sum += m_operand1[i * 10 + k] * m_operand2[k * 10 + j];
+    sum += m_operand1[i * 200 + k] * m_operand2[k * 200 + j];
    }
-   m_result[i * 10 + j] = sum;
+   m_result[i * 200 + j] = sum;
   }
  }
 }

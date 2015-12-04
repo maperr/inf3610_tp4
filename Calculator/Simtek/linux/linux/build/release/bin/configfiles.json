@@ -26,14 +26,6 @@
       "dataFile" : "adap_input_reader1_AMBA_AXIBus_LT1_rdIF.json",
       "schemaFile" : "adap_input_reader1_AMBA_AXIBus_LT1_rdIF.avsc"
     },
-    "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF" : {
-      "dataFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF.json",
-      "schemaFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF.avsc"
-    },
-    "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF" : {
-      "dataFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF.json",
-      "schemaFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF.avsc"
-    },
     "adap_multiplier1_AMBA_AXIBus_LT1_wrIF" : {
       "dataFile" : "adap_multiplier1_AMBA_AXIBus_LT1_wrIF.json",
       "schemaFile" : "adap_multiplier1_AMBA_AXIBus_LT1_wrIF.avsc"
@@ -75,14 +67,6 @@
     "fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0" : {
       "dataFile" : "fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0.json",
       "schemaFile" : "fifo_adap_input_reader1_AMBA_AXIBus_LT1_rdIF0.avsc"
-    },
-    "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0" : {
-      "dataFile" : "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0.json",
-      "schemaFile" : "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF0.avsc"
-    },
-    "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0" : {
-      "dataFile" : "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0.json",
-      "schemaFile" : "fifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0.avsc"
     },
     "fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0" : {
       "dataFile" : "fifo_adap_multiplier1_AMBA_AXIBus_LT1_wrIF0.json",
@@ -151,6 +135,10 @@
       "dataFile" : "AMBA_AXIBus_LT1_range.json",
       "schemaFile" : "AMBA_AXIBus_LT1_range.avsc"
     },
+    "armCortexA91_HP0_AMBA_AXIBus_LT1_range" : {
+      "dataFile" : "armCortexA91_HP0_AMBA_AXIBus_LT1_range.json",
+      "schemaFile" : "armCortexA91_HP0_AMBA_AXIBus_LT1_range.avsc"
+    },
     "XilinxPIC1_range" : {
       "dataFile" : "XilinxPIC1_range.json",
       "schemaFile" : "XilinxPIC1_range.avsc"
@@ -187,14 +175,6 @@
       "dataFile" : "adap_input_reader1_AMBA_AXIBus_LT1_rdIF_range.json",
       "schemaFile" : "adap_input_reader1_AMBA_AXIBus_LT1_rdIF_range.avsc"
     },
-    "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range" : {
-      "dataFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range.json",
-      "schemaFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range.avsc"
-    },
-    "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range" : {
-      "dataFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range.json",
-      "schemaFile" : "adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range.avsc"
-    },
     "adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range" : {
       "dataFile" : "adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range.json",
       "schemaFile" : "adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range.avsc"
@@ -218,6 +198,18 @@
     "DebugModule1_range" : {
       "dataFile" : "DebugModule1_range.json",
       "schemaFile" : "DebugModule1_range.avsc"
+    },
+    "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range" : {
+      "dataFile" : "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range.json",
+      "schemaFile" : "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range.avsc"
+    },
+    "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range_range" : {
+      "dataFile" : "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range_range.json",
+      "schemaFile" : "S_armCortexA91_HP0_AMBA_AXIBus_LT1_armCortexA91_range_range.avsc"
+    },
+    "dma_controller1_matrix_mul1_range" : {
+      "dataFile" : "dma_controller1_matrix_mul1_range.json",
+      "schemaFile" : "dma_controller1_matrix_mul1_range.avsc"
     },
     "S_AMBA_AXIBus_LT1_XilinxPIC1_range" : {
       "dataFile" : "S_AMBA_AXIBus_LT1_XilinxPIC1_range.json",
@@ -247,14 +239,6 @@
       "dataFile" : "S_AMBA_AXIBus_LT1_adap_input_reader1_AMBA_AXIBus_LT1_rdIF_range.json",
       "schemaFile" : "S_AMBA_AXIBus_LT1_adap_input_reader1_AMBA_AXIBus_LT1_rdIF_range.avsc"
     },
-    "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range" : {
-      "dataFile" : "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range.json",
-      "schemaFile" : "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_wrIF_range.avsc"
-    },
-    "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range" : {
-      "dataFile" : "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range.json",
-      "schemaFile" : "S_AMBA_AXIBus_LT1_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF_range.avsc"
-    },
     "S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range" : {
       "dataFile" : "S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range.json",
       "schemaFile" : "S_AMBA_AXIBus_LT1_adap_multiplier1_AMBA_AXIBus_LT1_wrIF_range.avsc"
@@ -282,6 +266,10 @@
     "S_AMBA_AXIBus_LT1_DebugModule1_range" : {
       "dataFile" : "S_AMBA_AXIBus_LT1_DebugModule1_range.json",
       "schemaFile" : "S_AMBA_AXIBus_LT1_DebugModule1_range.avsc"
+    },
+    "S_AMBA_AXIBus_LT1_dma_controller1_matrix_mul1_range" : {
+      "dataFile" : "S_AMBA_AXIBus_LT1_dma_controller1_matrix_mul1_range.json",
+      "schemaFile" : "S_AMBA_AXIBus_LT1_dma_controller1_matrix_mul1_range.avsc"
     }
   },
   "ProcessorMemoriesFiles" : { },
