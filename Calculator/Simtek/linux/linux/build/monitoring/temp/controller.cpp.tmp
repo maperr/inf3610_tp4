@@ -1,4 +1,4 @@
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "c:\\spacecodesign\\spacestudio-2.7.0\\toolchains\\arm-unknown-linux-gnueabi\\arm-unknown-linux-gnueabi\\sysroot\\usr\\include\\stdc-predef.h" 1 3 4
@@ -43,7 +43,7 @@
 
 /* We do not support C11 <threads.h>.  */
 # 1 "<command-line>" 2
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
 // ***********************************************************************
 //
 // Filename : controller.cpp
@@ -55,8 +55,8 @@
 //
 // ***********************************************************************
 #include "controller.h"
-# 11 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 1
+# 11 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.h" 1
 // ***********************************************************************
 //
 // Filename : controller.h
@@ -71,7 +71,7 @@
 
 
 #include "systemc.h"
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h"
+# 14 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.h"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/systemc.h" 1
 ///////////////////////////////////////////////////////////////////////////////
 ///\\file     systemc.h
@@ -5228,9 +5228,9 @@ using sc_core::SC_SEC;
 
 
 /* (c) Space Codesign Systems Inc. 2005-2014 */
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 2
+# 15 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.h" 2
 #include "SpaceBaseModule.h"
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h"
+# 15 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.h"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/SpaceBaseModule.h" 1
 ///////////////////////////////////////////////////////////////////////////////
 ///\\file     SpaceBaseModule.h
@@ -5521,7 +5521,7 @@ class SpaceBaseModule : public sc_core::sc_module
 
 
 /* (c) Space Codesign Systems Inc. 2005-2014 */
-# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.h" 2
+# 16 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.h" 2
 
 typedef enum {
  ADD,
@@ -5597,9 +5597,9 @@ class controller : public SpaceBaseModule
   void displayMessage(char* message);
 
 };
-# 12 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 12 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 #include "PlatformDefinitions.h"
-# 12 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 12 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
 # 1 "./PlatformDefinitions.h" 1
 // ***********************************************************************
 //
@@ -5635,10 +5635,10 @@ class controller : public SpaceBaseModule
 // SpaceComponents IDs
 # 60 "./PlatformDefinitions.h"
 // SpaceComponents PRIOs
-# 13 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 13 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 #include "ApplicationDefinitions.h"
-# 13 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
+# 13 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/application/ApplicationDefinitions.h" 1
 
 // ***********************************************************************
 //
@@ -5664,9 +5664,9 @@ class controller : public SpaceBaseModule
 
 
 //Add your definitions here
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 14 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 #include "SpaceDisplay.h"
-# 14 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 14 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include/SpaceDisplay.h" 1
 ///////////////////////////////////////////////////////////////////////////////
 ///
@@ -5804,23 +5804,23 @@ int SpacePrintVerbose(const char* instanceName, const char* messageFormat, ...);
 
 
 /* (c) Space Codesign Systems Inc. 2005-2014 */
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 15 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 #include "matrix_def.h"
-# 15 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
-# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 15 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
+# 16 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 #include "matrix.h"
-# 16 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 1
+# 16 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix.h" 1
 
 
 
 #include "matrix_def.h"
-# 4 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h"
-# 1 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
-# 5 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src/matrix.h" 2
+# 4 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix.h"
+# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
+# 5 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix.h" 2
 extern unsigned int* matrix_data[];
-# 17 "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module/controller.cpp" 2
+# 17 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module/controller.cpp" 2
 
 
 
@@ -6375,7 +6375,7 @@ long controller::delegateOperation(Operation operation, long operand1, long oper
         {
          sendMultiplicationMatOperand(operand1);
    sendMultiplicationMatOperand(operand2);
-   unsigned int *result = new unsigned int[100 * 100];
+   unsigned int *result = new unsigned int[10 * 10];
    readMultiplicationMatResult(result);
    if(operand1 == 9 && operand2 == 9)
     sc_stop();
@@ -6434,7 +6434,7 @@ void controller::sendDivisionOperand(long data)
 //////////////////////////////////////////////////////////////////////////////
 void controller::sendMultiplicationMatOperand(unsigned long data)
 {
- ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 100 * 100);
+ ModuleWrite(21, SPACE_BLOCKING, matrix_data[data], 10 * 10);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -6500,7 +6500,7 @@ long controller::readDivisionResult()
 //////////////////////////////////////////////////////////////////////////////
 void controller::readMultiplicationMatResult(unsigned int *resultBuffer)
 {
- ModuleRead(21, SPACE_BLOCKING, resultBuffer, 100 * 100);
+ ModuleRead(21, SPACE_BLOCKING, resultBuffer, 10 * 10);
 }
 
 //////////////////////////////////////////////////////////////////////////////

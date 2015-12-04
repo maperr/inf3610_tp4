@@ -2391,155 +2391,155 @@
     </declaration>
   </external_declaration>
   <external_declaration column="22"
-    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
     idref="1372" line="17">
     <declaration column="22"
-      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
       idref="1374" line="17">
       <declaration_specifiers column="22"
-        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
         idref="1378" line="17">
         <class_specifier column="22" extSCModule="true"
-          file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+          file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
           idref="1380" keyword="class" line="17" name="input_reader">
           <base_clause column="7"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1382" line="17">
             <base_specifier column="20"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1384" line="17" name="SpaceBaseModule">
               <base_class_access_specifier column="20"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1386" line="17" name="public"/>
             </base_specifier>
           </base_clause>
           <member_declaration column="1"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1388" line="19">
             <access_specifier column="1"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1390" line="19" name="public"/>
           </member_declaration>
           <member_declaration column="8"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1392" line="21"/>
           <member_declaration column="31"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1394" line="26">
             <ctor_definition column="31"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1396" line="26">
               <qualified_id column="31"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1398" line="26" name="input_reader"/>
               <parameter_list column="15"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1400" line="26">
                 <parameter_declaration column="15"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1402" line="26">
                   <declaration_specifiers column="15"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1404" line="26">
                     <builtin_type_specifier column="15"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1406" line="26" name="sc_module_name"/>
                   </declaration_specifiers>
                   <declarator column="16"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1408" line="26">
                     <qualified_id column="16"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1410" line="26" name="zName"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="36"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1412" line="26">
                   <declaration_specifiers column="36"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1414" line="26">
                     <builtin_type_specifier column="36"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1416" line="26" name="double"/>
                   </declaration_specifiers>
                   <declarator column="38"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1418" line="26">
                     <qualified_id column="38"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1420" line="26" name="dClockPeriod"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="57"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1422" line="26">
                   <declaration_specifiers column="57"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1424" line="26">
                     <builtin_type_specifier column="57"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1426" line="26" name="sc_time_unit"/>
                   </declaration_specifiers>
                   <declarator column="59"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1428" line="26">
                     <qualified_id column="59"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1430" line="26" name="Unit"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="76"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1432" line="26">
                   <declaration_specifiers column="76"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1434" line="26">
                     <builtin_type_specifier column="76"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1436" line="26" name="unsigned char"/>
                   </declaration_specifiers>
                   <declarator column="87"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1438" line="26">
                     <qualified_id column="87"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1440" line="26" name="ucID"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="96"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1442" line="26">
                   <declaration_specifiers column="96"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1444" line="26">
                     <builtin_type_specifier column="96"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1446" line="26" name="unsigned char"/>
                   </declaration_specifiers>
                   <declarator column="107"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1448" line="26">
                     <qualified_id column="107"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1450" line="26" name="ucPriority"/>
                   </declarator>
                 </parameter_declaration>
                 <parameter_declaration column="122"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1452" line="26">
                   <declaration_specifiers column="122"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1454" line="26">
                     <builtin_type_specifier column="122"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1456" line="26" name="bool"/>
                   </declaration_specifiers>
                   <declarator column="124"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1458" line="26">
                     <qualified_id column="124"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1460" line="26" name="bVerbose"/>
                   </declarator>
                 </parameter_declaration>
@@ -2547,39 +2547,39 @@
             </ctor_definition>
           </member_declaration>
           <member_declaration column="138"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1462" line="31">
             <function_definition column="138"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1464" line="31">
               <declaration_specifiers column="138"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1466" line="31">
                 <builtin_type_specifier column="138"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1468" line="31" name="void"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1470" line="31">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1472" line="31" name="thread"/>
                 <parameter_list column="14"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1474" line="31">
                   <parameter_declaration column="14"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1476" line="31">
                     <declaration_specifiers column="14"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1478" line="31">
                       <builtin_type_specifier column="14"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                         idref="1480" line="31" name="void"/>
                     </declaration_specifiers>
                     <abstract_declarator column="15"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1482" line="31"/>
                   </parameter_declaration>
                 </parameter_list>
@@ -2587,71 +2587,71 @@
             </function_definition>
           </member_declaration>
           <member_declaration column="20"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1484" line="33">
             <access_specifier column="20"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1486" line="33" name="private"/>
           </member_declaration>
           <member_declaration column="9"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1488" line="38">
             <function_definition column="9"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1490" line="38">
               <declaration_specifiers column="9"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1492" line="38">
                 <builtin_type_specifier column="9"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1494" line="38" name="unsigned long"/>
               </declaration_specifiers>
               <function_declarator column="12"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1496" line="38">
                 <qualified_id column="12"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1498" line="38" name="readUART"/>
               </function_declarator>
             </function_definition>
           </member_declaration>
           <member_declaration column="27"
-            file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+            file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
             idref="1500" line="39">
             <function_definition column="27"
-              file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+              file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
               idref="1502" line="39">
               <declaration_specifiers column="27"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1504" line="39">
                 <builtin_type_specifier column="27"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1506" line="39" name="void"/>
               </declaration_specifiers>
               <function_declarator column="3"
-                file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                 idref="1508" line="39">
                 <qualified_id column="3"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1510" line="39" name="send2FIFO"/>
                 <parameter_list column="17"
-                  file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                  file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                   idref="1512" line="39">
                   <parameter_declaration column="17"
-                    file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                    file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                     idref="1514" line="39">
                     <declaration_specifiers column="17"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1516" line="39">
                       <builtin_type_specifier column="17"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                         idref="1518" line="39" name="unsigned long"/>
                     </declaration_specifiers>
                     <declarator column="27"
-                      file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                      file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                       idref="1520" line="39">
                       <qualified_id column="27"
-                        file="C:\Users\gabil\Documents\INF3610A15Lab4Pt1\SpaceProject\Lab\Calculator\inf3610_tp4\Calculator\src\module\input_reader.h"
+                        file="C:\Users\gabil\Documents\inf3610_tp4\Calculator\src\module\input_reader.h"
                         idref="1522" line="39" name="data"/>
                     </declarator>
                   </parameter_declaration>

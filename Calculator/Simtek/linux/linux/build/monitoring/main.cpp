@@ -258,7 +258,7 @@ int sc_main(int arg_count, char **arg_value){
 	XilinxPIC1.IRQInPort[10](sfifo_adap_divider1_AMBA_AXIBus_LT1_rdIF0_IRQHasDataOutPort0);
 	XilinxPIC1.IRQInPort[11](sfifo_adap_matrix_mul1_AMBA_AXIBus_LT1_rdIF0_IRQHasDataOutPort0);
 
-	SPACE_MONITORABLE_SYSTEM( SPACE_MONITOR_USE_FILE, "C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring");
+	SPACE_MONITORABLE_SYSTEM( SPACE_MONITOR_USE_FILE, "C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring");
 		
 	SPACE_MONITORABLE_BUS( AMBA_AXIBus_LT1 );
 	SPACE_MONITORABLE_MODULE( adder1 );

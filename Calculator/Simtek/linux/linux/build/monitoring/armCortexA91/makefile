@@ -20,11 +20,11 @@ CXX		=	'C:/SpaceCodesign/SpaceStudio-2.7.0/util/ccache/ccache.exe' 'C:/SpaceCode
 LD		=	'C:/SpaceCodesign/SpaceStudio-2.7.0/toolchains/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-gcc.exe'
 
 ### Includes ###
-INCDIR	=	-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/module' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/src/application' \
-			-I 'C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src' \
+INCDIR	=	-I 'C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91' \
+			-I 'C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring' \
+			-I 'C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/module' \
+			-I 'C:/Users/gabil/Documents/inf3610_tp4/Calculator/src/application' \
+			-I 'C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceLib/release/sw/include' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/Linux3.6.0-digilent' \
 			-I 'C:/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/POSIX'
@@ -63,19 +63,19 @@ DEPSC   = $(patsubst %.c, %.P, $(CSOURCES))
 DEPSA   = $(patsubst %.S, %.P, $(ASOURCES))
 
 ### Target ###
-TARGET	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/Calculator_armCortexA91.arm.elf
+TARGET	= C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/Calculator_armCortexA91.arm.elf
  
 ### Stop simulation ###
-STOP_SIMULATION	= C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/stop_simulation.elf
+STOP_SIMULATION	= C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/stop_simulation.elf
 
 ### ip saver ###
-IP_SAVER = C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/ip_saver.elf
+IP_SAVER = C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/ip_saver.elf
 
 ### gdbserver notifier ###
-GDBSERVER_NOTIFIER = C:/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/gdbserver_notifier.elf
+GDBSERVER_NOTIFIER = C:/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91/gdbserver_notifier.elf
 
 ### Setting common path for modules and imported items ###
-VPATH = /c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91:/c/Users/gabil/Documents/INF3610A15Lab4Pt1/SpaceProject/Lab/Calculator/inf3610_tp4/Calculator/import/src:/c/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/Linux3.6.0-digilent:/c/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/POSIX
+VPATH = /c/Users/gabil/Documents/inf3610_tp4/Calculator/Simtek/linux/linux/build/monitoring/armCortexA91:/c/Users/gabil/Documents/inf3610_tp4/Calculator/import/src:/c/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/Linux3.6.0-digilent:/c/SpaceCodesign/SpaceStudio-2.7.0/sw/OS/POSIX
 
 ####### Implicit rules
 .SUFFIXES: .cpp .c .s

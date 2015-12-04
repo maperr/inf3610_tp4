@@ -7,6 +7,6 @@
 # Warning: This file content will be overwritten by the next generation process.
 #
 ################################################################################
-MODULE_READ	1	true	40000	47	unsigned+int
-MODULE_READ	1	true	40000	48	unsigned+int
-MODULE_WRITE	1	true	40000	58	unsigned+int
+MODULE_READ	1	true	400	45	unsigned+int
+MODULE_READ	1	true	400	46	unsigned+int
+MODULE_WRITE	1	true	400	56	unsigned+int
