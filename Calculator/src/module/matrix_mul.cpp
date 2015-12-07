@@ -59,12 +59,12 @@ void matrix_mul::sendResult() {
 void matrix_mul::multiplyMat() {
 	unsigned int i, j, k, sum;
 
-	for (i = 0; i < MATRIX_ROWS; i++)
+	L1: for (i = 0; i < MATRIX_ROWS; i++)
 	{
-		for (j = 0; j < MATRIX_COLUMNS; j++)
+		L2: for (j = 0; j < MATRIX_COLUMNS; j++)
 		{
 			sum = 0;
-			for (k = 0; k < MATRIX_ROWS; k++)
+			L3: for (k = 0; k < MATRIX_ROWS; k++)
 			{
 				sum += m_operand1[i * MATRIX_ROWS + k] * m_operand2[k * MATRIX_COLUMNS + j];
 			}

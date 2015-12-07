@@ -1,0 +1,21 @@
+################################################################################
+#
+# Filename : controller.cpp.arm.dat
+#
+# Author : SpaceStudio generation engine
+#
+# Warning: This file content will be overwritten by the next generation process.
+#
+################################################################################
+MODULE_WRITE	5	true	-1	90	unsigned+long
+MODULE_READ	3	true	-1	102	unsigned+long
+MODULE_WRITE	0	true	-1	590	long
+MODULE_WRITE	6	true	-1	600	long
+MODULE_WRITE	4	true	-1	610	long
+MODULE_WRITE	2	true	-1	620	long
+MODULE_READ	0	true	-1	644	long
+MODULE_READ	6	true	-1	658	long
+MODULE_READ	4	true	-1	672	long
+MODULE_READ	2	true	-1	686	long
+MEMORY2STREAM	1	1140850688	21	true	1000000	631	
+STREAM2MEMORY	1	21	1140850688	true	1000000	698	

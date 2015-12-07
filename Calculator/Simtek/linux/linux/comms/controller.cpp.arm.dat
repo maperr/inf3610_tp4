@@ -13,9 +13,9 @@ MODULE_WRITE	0	true	-1	589	long
 MODULE_WRITE	6	true	-1	599	long
 MODULE_WRITE	4	true	-1	609	long
 MODULE_WRITE	2	true	-1	619	long
-MODULE_WRITE	21	true	160000	629	unsigned+int
+MODULE_WRITE	21	true	360000	629	unsigned+int
 MODULE_READ	0	true	-1	641	long
 MODULE_READ	6	true	-1	655	long
 MODULE_READ	4	true	-1	669	long
 MODULE_READ	2	true	-1	683	long
-MODULE_READ	21	true	160000	695	unsigned+int
+MODULE_READ	21	true	360000	695	unsigned+int
