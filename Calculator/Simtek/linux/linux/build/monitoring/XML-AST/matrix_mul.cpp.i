@@ -137,9 +137,9 @@ class matrix_mul: public SpaceBaseModule {
   void sendResult();
   void multiplyMat();
 
-  unsigned int *m_result;
-  unsigned int *m_operand1;
-  unsigned int *m_operand2;
+  unsigned int m_result[90000];
+  unsigned int m_operand1[90000];
+  unsigned int m_operand2[90000];
 };
 # 9 "comms/matrix_mul.cpp" 2
 
@@ -150,16 +150,8 @@ class matrix_mul: public SpaceBaseModule {
 # 1 "C:/SpaceCodesign/SpaceStudio-2.7.0/SpaceStudio/src/main/resources/a/ck/headers/hw/SpaceDisplay.h" 1
 # 13 "comms/matrix_mul.cpp" 2
 
-# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
-# 15 "comms/matrix_mul.cpp" 2
-# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix.h" 1
 
 
-
-# 1 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix_def.h" 1
-# 5 "C:/Users/gabil/Documents/inf3610_tp4/Calculator/import/src/matrix.h" 2
-extern unsigned int* matrix_data[];
-# 16 "comms/matrix_mul.cpp" 2
 
 matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
   sc_core::sc_time_unit unit, unsigned char id, unsigned char priority,
@@ -168,10 +160,6 @@ matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
  SC_THREAD(thread);
 
  set_stack_size(0x16000 + 300 * 300 * 4 * 3);
-
- m_result = new unsigned int[300 * 300];
- m_operand1 = new unsigned int[300 * 300];
- m_operand2 = new unsigned int[300 * 300];
 }
 
 void matrix_mul::thread(void) {
@@ -199,20 +187,21 @@ void matrix_mul::readOperand() {
 
 
 void matrix_mul::sendResult() {
- SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[300 * 300 - 1]);
+ SpacePrint("%d and %d \n", m_result[0], m_result[300 * 300 - 1]);
  ModuleWrite(1, SPACE_BLOCKING, m_result, 300 * 300);
 }
 
 void matrix_mul::multiplyMat() {
  unsigned int i, j, k, sum;
 
- for (i = 0; i < 300; i++)
+ L1: for (i = 0; i < 300; i++)
  {
-  for (j = 0; j < 300; j++)
+  L2: for (j = 0; j < 300; j++)
   {
    sum = 0;
-   for (k = 0; k < 300; k++)
+   L3: for (k = 0; k < 300; k++)
    {
+#pragma HLS unroll
     sum += m_operand1[i * 300 + k] * m_operand2[k * 300 + j];
    }
    m_result[i * 300 + j] = sum;

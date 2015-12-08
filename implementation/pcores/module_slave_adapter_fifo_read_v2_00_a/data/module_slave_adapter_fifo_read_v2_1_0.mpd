@@ -1,0 +1,44 @@
+###################################################################
+##
+## Filename       : module_slave_adapter_fifo_read_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN module_slave_adapter_fifo_read
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+OPTION STYLE = MIX
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER AWIDTH = 32, DT = INTEGER
+PARAMETER DWIDTH = 32, DT = INTEGER
+PARAMETER GEN_ID = 0, DT = INTEGER
+
+## Ports
+PORT SDL_M_Clk = "", DIR = I
+PORT SDL_M_Data = "", DIR = I, VEC = [0:DWIDTH-1]
+PORT SDL_M_Write = "", DIR = I
+PORT SDL_M_Full = "", DIR = O
+
+PORT SBI_S_Clk = "", DIR = I
+PORT SBI_S_Address = "", DIR = I, VEC = [0:AWIDTH-1]
+PORT SBI_S_ReadEnable = "", DIR = I
+PORT SBI_S_ReadData = "", DIR = O, VEC = [0:DWIDTH-1]
+PORT SBI_S_WriteEnable = "", DIR = I
+PORT SBI_S_WriteData = "", DIR = I, VEC = [0:DWIDTH-1]
+PORT SBI_S_ByteEnable = "", DIR = I, VEC = [0:DWIDTH/8-1]
+PORT SBI_S_Ack = "", DIR = O
+
+PORT Reset = "", DIR = I
+PORT IRQHasData = "", DIR = O, SIGIS = INTERRUPT
+
+END

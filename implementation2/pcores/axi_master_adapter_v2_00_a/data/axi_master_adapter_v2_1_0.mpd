@@ -1,0 +1,63 @@
+###################################################################
+##
+## Filename       : axi_master_adapter_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN axi_master_adapter
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+
+## Bus Interfaces
+BUS_INTERFACE BUS = MAXI, BUS_STD = AXI, BUS_TYPE = MASTER
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER AWIDTH = 32, DT = INTEGER
+PARAMETER DWIDTH = 32, DT = INTEGER
+PARAMETER C_MAXI_ADDR_WIDTH = 32, DT = INTEGER, BUS = MAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+PARAMETER C_MAXI_DATA_WIDTH = 32, DT = INTEGER, BUS = MAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+PARAMETER C_MAXI_PROTOCOL = AXI4LITE, DT = STRING, BUS = MAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+
+## Ports
+PORT Clk = "", DIR = I
+PORT Reset = "", DIR = I
+
+PORT SBI_M_Address = "", DIR = I, VEC = [0:(AWIDTH-1)]
+PORT SBI_M_ReadEnable = "", DIR = I
+PORT SBI_M_ReadData = "", DIR = O, VEC = [0:(DWIDTH-1)]
+PORT SBI_M_WriteEnable = "", DIR = I
+PORT SBI_M_WriteData = "", DIR = I, VEC = [0:(DWIDTH-1)]
+PORT SBI_M_ByteEnable = "", DIR = I, VEC = [0:((DWIDTH/8)-1)]
+PORT SBI_M_Ack = "", DIR = O
+
+PORT ACLK = "", DIR = I, SIGIS = CLK, BUS = MAXI, ASSIGNMENT = REQUIRE
+PORT ARESETN = ARESETN, DIR = I, SIGIS = RST, BUS = MAXI
+PORT AWADDR = AWADDR, DIR = O, VEC = [(AWIDTH-1):0], ENDIAN = LITTLE, BUS = MAXI
+PORT AWVALID = AWVALID, DIR = O, BUS = MAXI
+PORT AWREADY = AWREADY, DIR = I, BUS = MAXI
+PORT WDATA = WDATA, DIR = O, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE, BUS = MAXI
+PORT WSTRB = WSTRB, DIR = O, VEC = [((DWIDTH/8)-1):0], ENDIAN = LITTLE, BUS = MAXI
+PORT WVALID = WVALID, DIR = O, BUS = MAXI
+PORT WREADY = WREADY, DIR = I, BUS = MAXI
+PORT BRESP = BRESP, DIR = I, VEC = [1:0], BUS = MAXI
+PORT BVALID = BVALID, DIR = I, BUS = MAXI
+PORT BREADY = BREADY, DIR = O, BUS = MAXI
+PORT ARADDR = ARADDR, DIR = O, VEC = [(AWIDTH-1):0], ENDIAN = LITTLE, BUS = MAXI
+PORT ARVALID = ARVALID, DIR = O, BUS = MAXI
+PORT ARREADY = ARREADY, DIR = I, BUS = MAXI
+PORT RDATA = RDATA, DIR = I, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE, BUS = MAXI
+PORT RRESP = RRESP, DIR = I, VEC = [1:0], BUS = MAXI
+PORT RVALID = RVALID, DIR = I, BUS = MAXI
+PORT RREADY = RREADY, DIR = O, BUS = MAXI
+
+END

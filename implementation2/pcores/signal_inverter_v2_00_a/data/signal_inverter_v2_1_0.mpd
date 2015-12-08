@@ -1,0 +1,23 @@
+###################################################################
+##
+## Filename       : signal_inverter_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN signal_inverter
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+PORT input_port = "", DIR = I
+PORT output_port = "", DIR = O
+
+END

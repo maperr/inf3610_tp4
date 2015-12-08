@@ -1,0 +1,63 @@
+###################################################################
+##
+## Filename       : axi_slave_adapter_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN axi_slave_adapter
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+
+## Bus Interfaces
+BUS_INTERFACE BUS = SAXI, BUS_TYPE = SLAVE, BUS_STD = AXI
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER C_BASEADDR = 0xffffffff, DT = std_logic_vector, MIN_SIZE = 0x800, BUS = SAXI, ADDRESS = BASE, PAIR = C_HIGHADDR
+PARAMETER C_HIGHADDR = 0x00000000, DT = std_logic_vector, BUS = SAXI, ADDRESS = HIGH, PAIR = C_BASEADDR
+PARAMETER C_SAXI_PROTOCOL = AXI4LITE, DT = STRING, BUS = SAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+PARAMETER C_SAXI_ADDR_WIDTH = 32, DT = INTEGER, BUS = SAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+PARAMETER C_SAXI_DATA_WIDTH = 32, DT = INTEGER, BUS = SAXI, ASSIGNMENT = CONSTANT, TYPE = NON_HDL
+PARAMETER AWIDTH = 32, DT = integer, BUS = SAXI
+PARAMETER DWIDTH = 32, DT = integer, BUS = SAXI
+
+## Ports
+PORT Clk = "", DIR = I
+PORT Reset = "", DIR = I
+PORT SBI_S_Address = "", DIR = O, VEC = [0:(AWIDTH-1)]
+PORT SBI_S_ReadEnable = "", DIR = O
+PORT SBI_S_ReadData = "", DIR = I, VEC = [0:(DWIDTH-1)]
+PORT SBI_S_WriteEnable = "", DIR = O
+PORT SBI_S_WriteData = "", DIR = O, VEC = [0:(DWIDTH-1)]
+PORT SBI_S_ByteEnable = "", DIR = O, VEC = [0:((DWIDTH/8)-1)]
+PORT SBI_S_Ack = "", DIR = I
+PORT ACLK = "", DIR = I, SIGIS = CLK, BUS = SAXI, ASSIGNMENT = REQUIRE
+PORT ARESETN = ARESETN, DIR = I, SIGIS = RST, BUS = SAXI
+PORT AWADDR = AWADDR, DIR = I, VEC = [(AWIDTH-1):0], ENDIAN = LITTLE, BUS = SAXI
+PORT AWVALID = AWVALID, DIR = I, BUS = SAXI
+PORT AWREADY = AWREADY, DIR = O, BUS = SAXI
+PORT WDATA = WDATA, DIR = I, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE, BUS = SAXI
+PORT WSTRB = WSTRB, DIR = I, VEC = [((DWIDTH/8)-1):0], ENDIAN = LITTLE, BUS = SAXI
+PORT WVALID = WVALID, DIR = I, BUS = SAXI
+PORT WREADY = WREADY, DIR = O, BUS = SAXI
+PORT BRESP = BRESP, DIR = O, VEC = [1:0], BUS = SAXI
+PORT BVALID = BVALID, DIR = O, BUS = SAXI
+PORT BREADY = BREADY, DIR = I, BUS = SAXI
+PORT ARADDR = ARADDR, DIR = I, VEC = [(AWIDTH-1):0], ENDIAN = LITTLE, BUS = SAXI
+PORT ARVALID = ARVALID, DIR = I, BUS = SAXI
+PORT ARREADY = ARREADY, DIR = O, BUS = SAXI
+PORT RDATA = RDATA, DIR = O, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE, BUS = SAXI
+PORT RRESP = RRESP, DIR = O, VEC = [1:0], BUS = SAXI
+PORT RVALID = RVALID, DIR = O, BUS = SAXI
+PORT RREADY = RREADY, DIR = I, BUS = SAXI
+
+END

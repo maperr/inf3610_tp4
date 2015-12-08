@@ -1,0 +1,5 @@
+lib matrix_mul_top_v2_00_a matrix_mul_top.vhd vhdl
+lib matrix_mul_top_v2_00_a matrix_mul.vhd vhdl
+lib matrix_mul_top_v2_00_a matrix_mul_mul_32s_32s_32_6.vhd vhdl
+lib matrix_mul_top_v2_00_a matrix_mul_m_result.vhd vhdl
+lib matrix_mul_top_v2_00_a matrix_mul_thread.vhd vhdl

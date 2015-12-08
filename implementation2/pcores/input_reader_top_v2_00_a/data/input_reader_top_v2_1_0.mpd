@@ -1,0 +1,40 @@
+###################################################################
+##
+## Filename       : input_reader_top_v2_1_0.mpd
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN input_reader_top
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER AWIDTH = 32, DT = INTEGER
+PARAMETER DWIDTH = 32, DT = INTEGER
+
+## Ports
+
+PORT SDL0_M_Data = "", DIR = O, VEC = [0:(DWIDTH-1)]
+PORT SDL0_M_Write = "", DIR = O
+PORT SDL0_M_Full = "", DIR = I
+        
+PORT SBI_M_Address = "", DIR = O, VEC = [0:(AWIDTH-1)]
+PORT SBI_M_ReadEnable = "", DIR = O
+PORT SBI_M_ReadData = "", DIR = I, VEC = [0:(DWIDTH-1)]
+PORT SBI_M_WriteEnable = "", DIR = O
+PORT SBI_M_WriteData = "", DIR = O, VEC = [0:(DWIDTH-1)]
+PORT SBI_M_ByteEnable = "", DIR = O, VEC = [0:((DWIDTH/8)-1)]
+PORT SBI_M_Ack = "", DIR = I
+
+PORT Clk = "", DIR = I
+PORT Reset = "", DIR = I
+
+END

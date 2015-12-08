@@ -1,0 +1,11 @@
+###################################################################
+##
+## Filename       : axis_2_sdl_v2_1_0.pao
+## Description    : Peripheral Analysis Order
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+lib axis_2_sdl_v2_00_a axis_2_sdl vhdl

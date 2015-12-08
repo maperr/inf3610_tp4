@@ -1,0 +1,41 @@
+###################################################################
+##
+## Filename       : sdl_2_axis_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN sdl_2_axis
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+## Bus Interfaces
+BUS_INTERFACE BUS = AXIS, BUS_STD = AXIS, BUS_TYPE = INITIATOR
+PARAMETER C_AXIS_PROTOCOL = GENERIC, DT = STRING, TYPE = NON_HDL, BUS = AXIS
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER DWIDTH = 32, DT = integer
+
+PORT Clk = "", DIR = I
+PORT Reset = "", DIR = I
+
+PORT SDL_M_Data = "", DIR = I, VEC = [0:(DWIDTH-1)]
+PORT SDL_M_Write = "", DIR = I
+PORT SDL_M_Full = "", DIR = O
+PORT SDL_M_End = "", DIR = I
+
+PORT SDL_M_Enable = "", DIR = I
+
+PORT AXIS_S_TDATA = TDATA, DIR = O, VEC = [DWIDTH-1:0], BUS = AXIS
+PORT AXIS_S_TVALID = TVALID, DIR = O, BUS = AXIS
+PORT AXIS_S_TREADY = TREADY, DIR = I, BUS = AXIS
+PORT AXIS_S_TLAST = TLAST, DIR = O, BUS = AXIS
+END

@@ -1,0 +1,283 @@
+<profile>
+
+<section name = "Report Version" level="0">
+<item name = "Tool">Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC</item>
+<item name = "Version">2012.4</item>
+<item name = "Build date">Fri Dec 07 12:41:34 PM 2012</item>
+<item name = "Copyright (C)">2012 Xilinx Inc. All rights reserved.</item>
+</section>
+
+<section name = "General Information" level="0">
+<item name = "Project">matrix_mul</item>
+<item name = "Solution">solution1</item>
+<item name = "Date">Mon Dec 07 19:30:03 2015
+</item>
+</section>
+
+<section name = "User Assignments" level="0">
+<item name = "Product Family">zynq zynq_fpv6 </item>
+<item name = "Part">xc7z020clg484-1</item>
+<item name = "Top Model name">matrix_mul_thread</item>
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">3.00</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Summary of timing analysis">
+<section name = "" level="1">
+<item name = "Estimated clock period (ns)">6.36</item>
+</section>
+</item>
+<item name = "Summary of overall latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Best-case latency">?</item>
+<item name = "Average-case latency">?</item>
+<item name = "Worst-case latency">?</item>
+</section>
+</item>
+<item name = "Summary of loop latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Loop 1">
+<section name = "" level="1">
+<item name = "Trip count">inf</item>
+<item name = "Latency">?</item>
+<item name = "Iteration latency">?</item>
+<item name = "Loop 1.1">
+<section name = "" level="1">
+<item name = "Trip count">90000 ~ 90000</item>
+<item name = "Latency">?</item>
+<item name = "Loop 1.1.1">
+<section name = "" level="1">
+<item name = "Trip count">?</item>
+<item name = "Latency">?</item>
+</section>
+</item>
+</section>
+</item>
+<item name = "Loop 1.2">
+<section name = "" level="1">
+<item name = "Trip count">90000 ~ 90000</item>
+<item name = "Latency">?</item>
+<item name = "Loop 1.2.1">
+<section name = "" level="1">
+<item name = "Trip count">?</item>
+<item name = "Latency">?</item>
+</section>
+</item>
+</section>
+</item>
+<item name = "L1">
+<section name = "" level="1">
+<item name = "Trip count">300 ~ 300</item>
+<item name = "Latency">243180600 ~ 243180600</item>
+<item name = "L2">
+<section name = "" level="1">
+<item name = "Trip count">300 ~ 300</item>
+<item name = "Latency">810600 ~ 810600</item>
+<item name = "L3">
+<section name = "" level="1">
+<item name = "Trip count">300 ~ 300</item>
+<item name = "Latency">2700 ~ 2700</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</item>
+<item name = "Loop 1.4">
+<section name = "" level="1">
+<item name = "Trip count">90000 ~ 90000</item>
+<item name = "Latency">?</item>
+<item name = "Loop 1.4.1">
+<section name = "" level="1">
+<item name = "Trip count">?</item>
+<item name = "Latency">?</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Area Estimates" level="0">
+<item name = "Summary"><table name="(Target device: xc7z020clg484-1)" hasTotal="1">
+<keys size="5">BRAM_18K, DSP48E, FF, LUT, SLICE</keys>
+<column name="Component">-, 4, 45, 21, -</column>
+<column name="Expression">-, -, 0, 402, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 313, -</column>
+<column name="Register">-, -, 519, -, -</column>
+<column name="ShiftMemory">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 13300</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Details">
+<section name = "" level="1">
+<item name = "Component"><table name="" hasTotal="1">
+<keys size="3">DSP48E, FF, LUT</keys>
+<column name="matrix_mul_mul_32s_32s_32_6_U1 (matrix_mul_mul_32s_32s_32_6)">4, 45, 21</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="4">P0, P1, FF, LUT</keys>
+<column name="exitcond1_fu_400_p2 ( icmp ) ">17, 17, 0, 21</column>
+<column name="exitcond2_fu_434_p2 ( icmp ) ">9, 9, 0, 10</column>
+<column name="exitcond7_fu_529_p2 ( icmp ) ">17, 17, 0, 21</column>
+<column name="exitcond8_fu_466_p2 ( icmp ) ">9, 9, 0, 10</column>
+<column name="exitcond9_fu_450_p2 ( icmp ) ">9, 9, 0, 10</column>
+<column name="exitcond_fu_367_p2 ( icmp ) ">17, 17, 0, 21</column>
+<column name="i_3_fu_373_p2 ( + ) ">17, 1, 0, 17</column>
+<column name="i_5_fu_406_p2 ( + ) ">17, 1, 0, 17</column>
+<column name="i_6_fu_440_p2 ( + ) ">9, 1, 0, 9</column>
+<column name="i_7_fu_535_p2 ( + ) ">17, 1, 0, 17</column>
+<column name="j_1_fu_456_p2 ( + ) ">9, 1, 0, 9</column>
+<column name="k_1_fu_472_p2 ( + ) ">9, 1, 0, 9</column>
+<column name="next_mul1_fu_428_p2 ( + ) ">17, 9, 0, 17</column>
+<column name="next_mul_fu_489_p2 ( + ) ">17, 9, 0, 17</column>
+<column name="ptData32_assign_4_rec_fu_389_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="ptData32_assign_7_rec_fu_422_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="ptData32_assign_8_rec_fu_551_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="sum_1_fu_519_p2 ( + ) ">32, 32, 0, 32</column>
+<column name="tmp_1_fu_505_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="tmp_2_fu_478_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="tmp_3_fu_379_p2 ( icmp ) ">17, 17, 0, 21</column>
+<column name="tmp_5_fu_495_p2 ( + ) ">17, 17, 0, 17</column>
+<column name="tmp_8_fu_412_p2 ( icmp ) ">17, 17, 0, 21</column>
+<column name="tmp_s_fu_541_p2 ( icmp ) ">17, 17, 0, 21</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="4">Size, Bits, Count, LUT</keys>
+<column name="WriteDataPort_0">2, 32, 64, 32</column>
+<column name="ap_NS_fsm">27, 5, 135, 35</column>
+<column name="i_1_reg_256">2, 17, 34, 17</column>
+<column name="i_2_reg_268">2, 9, 18, 9</column>
+<column name="i_4_reg_349">2, 17, 34, 17</column>
+<column name="i_reg_232">2, 17, 34, 17</column>
+<column name="j_reg_291">2, 9, 18, 9</column>
+<column name="k_reg_302">2, 9, 18, 9</column>
+<column name="m_operand1_address0">2, 17, 34, 17</column>
+<column name="m_operand2_address0">2, 17, 34, 17</column>
+<column name="m_result_address0">2, 17, 34, 17</column>
+<column name="phi_mul1_reg_279">2, 17, 34, 17</column>
+<column name="phi_mul_reg_326">2, 17, 34, 17</column>
+<column name="ptData32_assign_1_rec_reg_220">2, 17, 34, 17</column>
+<column name="ptData32_assign_3_rec_reg_244">2, 17, 34, 17</column>
+<column name="ptData32_assign_6_rec_reg_337">2, 17, 34, 17</column>
+<column name="sum_reg_313">2, 32, 64, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="3">Bits, Consts, FF</keys>
+<column name="ap_CS_fsm">5, 0, 5</column>
+<column name="i_1_reg_256">17, 0, 17</column>
+<column name="i_2_reg_268">9, 0, 9</column>
+<column name="i_3_reg_565">17, 0, 17</column>
+<column name="i_4_reg_349">17, 0, 17</column>
+<column name="i_5_reg_586">17, 0, 17</column>
+<column name="i_6_reg_607">9, 0, 9</column>
+<column name="i_7_reg_677">17, 0, 17</column>
+<column name="i_reg_232">17, 0, 17</column>
+<column name="j_1_reg_621">9, 0, 9</column>
+<column name="j_cast_reg_612">17, 8, 9</column>
+<column name="j_reg_291">9, 0, 9</column>
+<column name="k_1_reg_629">9, 0, 9</column>
+<column name="k_reg_302">9, 0, 9</column>
+<column name="m_operand1_addr_1_reg_557">17, 0, 17</column>
+<column name="m_operand1_load_reg_649">32, 0, 32</column>
+<column name="m_operand2_addr_1_reg_578">17, 0, 17</column>
+<column name="m_operand2_load_reg_654">32, 0, 32</column>
+<column name="m_result_addr_1_reg_669">17, 0, 17</column>
+<column name="next_mul1_reg_599">17, 0, 17</column>
+<column name="next_mul_reg_639">17, 0, 17</column>
+<column name="phi_mul1_reg_279">17, 0, 17</column>
+<column name="phi_mul_reg_326">17, 0, 17</column>
+<column name="ptData32_assign_1_rec_reg_220">17, 0, 17</column>
+<column name="ptData32_assign_3_rec_reg_244">17, 0, 17</column>
+<column name="ptData32_assign_4_rec_reg_573">17, 0, 17</column>
+<column name="ptData32_assign_6_rec_reg_337">17, 0, 17</column>
+<column name="ptData32_assign_7_rec_reg_594">17, 0, 17</column>
+<column name="ptData32_assign_8_rec_reg_685">17, 0, 17</column>
+<column name="sum_reg_313">32, 0, 32</column>
+<column name="tmp_6_reg_659">32, 0, 32</column>
+</table>
+</item>
+<item name = "ShiftMemory"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+</section>
+</item>
+<item name = "Hierarchical Multiplexer Count"><table name="" hasTotal="1">
+<keys size="3">Size, Bits, Count</keys>
+<column name="(This level)">59, 283, 691</column>
+<column name="matrix_mul_mul_32s_32s_32_6_U1 (matrix_mul_mul_32s_32s_32_6)">-, -, 0</column>
+</table>
+</item>
+</section>
+
+<section name = "Power Estimate" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="1">Power</keys>
+<column name="Component">6</column>
+<column name="Expression">40</column>
+<column name="FIFO">-</column>
+<column name="Memory">-</column>
+<column name="Multiplexer">31</column>
+<column name="Register">51</column>
+<column name="ShiftMemory">-</column>
+</table>
+</item>
+<item name = "Hierarchical Register Count"><table name="" hasTotal="1">
+<keys size="1">Count</keys>
+<column name="(This level)">519</column>
+</table>
+</item>
+</section>
+
+<section name = "Interface Summary" level="0">
+<item name = "Interfaces"><table name="" hasTotal="0">
+<keys size="7">Object, Type, Scope, IO Protocol, IO Config, Dir, Bits</keys>
+<column name="ap_clk">matrix_mul::thread, return value, -, , , in, 1</column>
+<column name="ap_rst">, , -, , , in, 1</column>
+<column name="ReadEnablePort_0">ReadEnablePort_0, pointer, -, ap_vld, , out, 1</column>
+<column name="ReadEnablePort_0_ap_vld">, , -, , , out, 1</column>
+<column name="ReadEmptyPort_0">ReadEmptyPort_0, pointer, -, ap_none, , in, 1</column>
+<column name="ReadDataPort_0">ReadDataPort_0, pointer, -, ap_none, , in, 32</column>
+<column name="WriteEnablePort_0">WriteEnablePort_0, pointer, -, ap_vld, , out, 1</column>
+<column name="WriteEnablePort_0_ap_vld">, , -, , , out, 1</column>
+<column name="WriteFullPort_0">WriteFullPort_0, pointer, -, ap_none, , in, 1</column>
+<column name="WriteDataPort_0">WriteDataPort_0, pointer, -, ap_vld, , out, 32</column>
+<column name="WriteDataPort_0_ap_vld">, , -, , , out, 1</column>
+<column name="m_result_address0">m_result, array, -, ap_memory, , out, 17</column>
+<column name="m_result_ce0">, , -, , , out, 1</column>
+<column name="m_result_we0">, , -, , , out, 1</column>
+<column name="m_result_d0">, , -, , , out, 32</column>
+<column name="m_result_q0">, , -, , , in, 32</column>
+<column name="m_operand1_address0">m_operand1, array, -, ap_memory, , out, 17</column>
+<column name="m_operand1_ce0">, , -, , , out, 1</column>
+<column name="m_operand1_we0">, , -, , , out, 1</column>
+<column name="m_operand1_d0">, , -, , , out, 32</column>
+<column name="m_operand1_q0">, , -, , , in, 32</column>
+<column name="m_operand2_address0">m_operand2, array, -, ap_memory, , out, 17</column>
+<column name="m_operand2_ce0">, , -, , , out, 1</column>
+<column name="m_operand2_we0">, , -, , , out, 1</column>
+<column name="m_operand2_d0">, , -, , , out, 32</column>
+<column name="m_operand2_q0">, , -, , , in, 32</column>
+</table>
+</item>
+</section>
+</profile>

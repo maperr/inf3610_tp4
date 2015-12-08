@@ -1,0 +1,11 @@
+###################################################################
+##
+## Filename       : signal_inverter_v2_1_0.pao
+## Description    : Peripheral Analysis Order
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+lib signal_inverter_v2_00_a signal_inverter vhdl

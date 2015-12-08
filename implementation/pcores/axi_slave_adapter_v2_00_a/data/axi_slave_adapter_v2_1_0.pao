@@ -1,0 +1,11 @@
+###################################################################
+##
+## Filename       : axi_slave_adapter_v2_1_0.pao
+## Description    : Peripheral Analysis Order
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+lib axi_slave_adapter_v2_00_a axi_slave_adapter vhdl

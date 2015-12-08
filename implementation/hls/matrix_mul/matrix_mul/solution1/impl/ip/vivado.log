@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2012.4.1 (64-bit)
+# Build 222254 by xbuild on Tue Dec 18 05:21:09 MST 2012
+# Start of session at: Mon Dec 07 19:30:12 2015
+# Process ID: 120
+# Log file: C:/Users/gabil/Documents/inf3610_tp4/implementation/hls/matrix_mul/matrix_mul/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/gabil/Documents/inf3610_tp4/implementation/hls/matrix_mul/matrix_mul/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from C:/Logiciels/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Logiciels/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Logiciels/Xilinx/14.4/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source run_ippack.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 07 19:30:22 2015...

@@ -11,8 +11,8 @@
 #include "ApplicationDefinitions.h"
 #include "SpaceDisplay.h"
 #include "SpaceTypes.h"
-#include "matrix_def.h"
-#include "matrix.h"
+//#include "matrix_def.h"
+//#include "matrix.h"
 
 matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
 		sc_core::sc_time_unit unit, unsigned char id, unsigned char priority,
@@ -20,11 +20,7 @@ matrix_mul::matrix_mul(sc_core::sc_module_name name, double period,
 		SpaceBaseModule(name, period, unit, id, priority, verbose) {
 	SC_THREAD(thread);
 
-	set_stack_size(0x16000 + MATRIX_COLUMNS * MATRIX_ROWS * 4 * 3);
-
-	m_result = new unsigned int[MATRIX_COLUMNS * MATRIX_ROWS];
-	m_operand1 = new unsigned int[MATRIX_COLUMNS * MATRIX_ROWS];
-	m_operand2 = new unsigned int[MATRIX_COLUMNS * MATRIX_ROWS];
+	set_stack_size(0x16000 + 300 * 300 * 4 * 3);
 }
 
 void matrix_mul::thread(void) {
@@ -42,8 +38,8 @@ void matrix_mul::thread(void) {
 //////////////////////////////////////////////////////////////////////////////
 //yfgfygdfy
 void matrix_mul::readOperand() {
-	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand1, MATRIX_ROWS * MATRIX_COLUMNS);
-	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand2, MATRIX_ROWS * MATRIX_COLUMNS);
+	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand1, 300 * 300);
+	ModuleRead(CONTROLLER_ID, SPACE_BLOCKING, m_operand2, 300 * 300);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -52,23 +48,24 @@ void matrix_mul::readOperand() {
 ///
 //////////////////////////////////////////////////////////////////////////////
 void matrix_mul::sendResult() {
-	SpacePrint("%d z %d = %d and %d \n", m_operand1[0], m_operand2[0],m_result[0], m_result[MATRIX_ROWS * MATRIX_COLUMNS - 1]);
-	ModuleWrite(CONTROLLER_ID, SPACE_BLOCKING, m_result, MATRIX_ROWS * MATRIX_COLUMNS);
+	SpacePrint("%d and %d \n", m_result[0], m_result[300 * 300 - 1]);
+	ModuleWrite(CONTROLLER_ID, SPACE_BLOCKING, m_result, 300 * 300);
 }
 
 void matrix_mul::multiplyMat() {
 	unsigned int i, j, k, sum;
 
-	L1: for (i = 0; i < MATRIX_ROWS; i++)
+	L1: for (i = 0; i < 300; i++)
 	{
-		L2: for (j = 0; j < MATRIX_COLUMNS; j++)
+		L2: for (j = 0; j < 300; j++)
 		{
 			sum = 0;
-			L3: for (k = 0; k < MATRIX_ROWS; k++)
+			L3: for (k = 0; k < 300; k++)
 			{
-				sum += m_operand1[i * MATRIX_ROWS + k] * m_operand2[k * MATRIX_COLUMNS + j];
+#pragma HLS unroll
+				sum += m_operand1[i * 300 + k] * m_operand2[k * 300 + j];
 			}
-			m_result[i * MATRIX_ROWS + j] = sum;
+			m_result[i * 300 + j] = sum;
 		}
 	}
 }

@@ -22,10 +22,10 @@ class matrix_mul: public SpaceBaseModule {
 	    void readOperand();
 		void sendResult();
 		void multiplyMat();
-		
-		unsigned int *m_result;
-		unsigned int *m_operand1;
-		unsigned int *m_operand2;
+
+		unsigned int m_result[90000];
+		unsigned int m_operand1[90000];
+		unsigned int m_operand2[90000];
 };
 
 #endif

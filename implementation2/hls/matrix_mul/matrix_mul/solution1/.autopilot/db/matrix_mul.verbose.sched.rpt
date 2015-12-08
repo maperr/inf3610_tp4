@@ -1,0 +1,242 @@
+
+
+================================================================
+== Report Version
+================================================================
+* Tool:          Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+* Version:       2012.4
+* Build date:    Fri Dec 07 12:41:34 PM 2012
+* Copyright (C): 2012 Xilinx Inc. All rights reserved.
+
+
+================================================================
+== General Information
+================================================================
+* Project:  matrix_mul
+* Solution: solution1
+* Date:     Mon Dec 07 20:23:36 2015
+
+
+
+================================================================
+== User Assignments
+================================================================
+* Product Family:           zynq zynq_fpv6 
+* Part:                     xc7z020clg484-1
+* Top Model name:           matrix_mul
+* Target clock period (ns): 10.00
+* Clock uncertainty (ns):   3.00
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Summary of timing analysis: 
+    * Estimated clock period (ns): 6.36
++ Summary of overall latency (clock cycles): 
+    * Best-case latency:    ?
+    * Average-case latency: ?
+    * Worst-case latency:   ?
+
+
+================================================================
+== Area Estimates
+================================================================
+* Summary: 
+(Target device: xc7z020clg484-1)
++---+-----------------+---------+-------+--------+-------+-------+
+| ID|             Name| BRAM_18K| DSP48E|      FF|    LUT|  SLICE|
++---+-----------------+---------+-------+--------+-------+-------+
+|  0|        Component|        -|      -|       -|      -|      -|
+|  1|       Expression|        -|      -|       -|      -|      -|
+|  2|             FIFO|        -|      -|       -|      -|      -|
+|  3|           Memory|        -|      -|       -|      -|      -|
+|  4|      Multiplexer|        -|      -|       -|      -|      -|
+|  5|         Register|        -|      -|       -|      -|      -|
+|  6|      ShiftMemory|        -|      -|       -|      -|      -|
++---+-----------------+---------+-------+--------+-------+-------+
+|  -|            Total|        0|      0|       0|      0|      0|
++---+-----------------+---------+-------+--------+-------+-------+
+|  -|        Available|      280|    220|  106400|  53200|  13300|
++---+-----------------+---------+-------+--------+-------+-------+
+|  -|  Utilization (%)|        0|      0|       0|      0|      0|
++---+-----------------+---------+-------+--------+-------+-------+
+
++ Details: 
+    * Component: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+    * ShiftMemory: 
+    N/A
+
+* Hierarchical Multiplexer Count: 
++---+--------------+-----+-----+------+
+| ID|          Name| Size| Bits| Count|
++---+--------------+-----+-----+------+
+|  0|  (This level)|    0|    0|     0|
++---+--------------+-----+-----+------+
+|  -|         Total|    0|    0|     0|
++---+--------------+-----+-----+------+
+
+
+
+================================================================
+== Power Estimate
+================================================================
+* Summary: 
++---+-------------+
+| ID|         Name|
++---+-------------+
+|  0|    Component|
+|  1|   Expression|
+|  2|         FIFO|
+|  3|       Memory|
+|  4|  Multiplexer|
+|  5|     Register|
+|  6|  ShiftMemory|
++---+-------------+
+|  -|        Total|
++---+-------------+
+
+* Hierarchical Register Count: 
++---+--------------+------+
+| ID|          Name| Count|
++---+--------------+------+
+|  0|  (This level)|     0|
++---+--------------+------+
+|  -|         Total|     0|
++---+--------------+------+
+
+
+
+================================================================
+== Interface Summary
+================================================================
+* Interfaces: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / (matrix_mul_ssdm_thread_M_thread_load)
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 2.39ns
+ST_1: stg_3 [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @p_str5, [11 x i8]* @p_str5) nounwind
+
+ST_1: matrix_mul_ssdm_thread_M_thread_load [1/1] 0.00ns
+entry:1  %matrix_mul_ssdm_thread_M_thread_load = load i1* @matrix_mul_ssdm_thread_M_thread, align 1 ; <i1> [#uses=1]
+
+ST_1: stg_5 [1/1] 0.00ns
+entry:2  br i1 %matrix_mul_ssdm_thread_M_thread_load, label %bb, label %bb1
+
+ST_1: stg_6 [1/1] 0.00ns
+bb1:0  call void (...)* @_ssdm_op_SpecProcessDecl([11 x i8]* @p_str5, i32 2, [7 x i8]* @p_str17) nounwind
+
+ST_1: stg_7 [1/1] 0.00ns
+bb1:1  call void (...)* @_ssdm_op_SpecSensitive([7 x i8]* @p_str17, [10 x i8]* @p_str8, i1* %ClockPort, i32 1) nounwind
+
+ST_1: stg_8 [1/1] 0.00ns
+bb1:2  call void (...)* @_ssdm_op_SpecSensitive([7 x i8]* @p_str17, [11 x i8]* @p_str7, i1* %nResetPort, i32 3) nounwind
+
+ST_1: stg_9 [1/1] 0.00ns
+bb1:3  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 0, [7 x i8]* @p_str6, [11 x i8]* @p_str7, i32 0, i32 0, i1* %nResetPort) nounwind
+
+ST_1: stg_10 [1/1] 0.00ns
+bb1:4  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 0, [7 x i8]* @p_str6, [10 x i8]* @p_str8, i32 0, i32 0, i1* %ClockPort) nounwind
+
+ST_1: stg_11 [1/1] 0.00ns
+bb1:5  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 1, [18 x i8]* @p_str9, [17 x i8]* @p_str10, i32 0, i32 0, i1* %ReadEnablePort_0) nounwind
+
+ST_1: stg_12 [1/1] 0.00ns
+bb1:6  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 0, [18 x i8]* @p_str9, [16 x i8]* @p_str11, i32 0, i32 0, i1* %ReadEmptyPort_0) nounwind
+
+ST_1: stg_13 [1/1] 0.00ns
+bb1:7  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 0, [19 x i8]* @p_str12, [15 x i8]* @p_str13, i32 0, i32 0, i32* %ReadDataPort_0) nounwind
+
+ST_1: stg_14 [1/1] 0.00ns
+bb1:8  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 1, [18 x i8]* @p_str9, [18 x i8]* @p_str14, i32 0, i32 0, i1* %WriteEnablePort_0) nounwind
+
+ST_1: stg_15 [1/1] 0.00ns
+bb1:9  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 0, [18 x i8]* @p_str9, [16 x i8]* @p_str15, i32 0, i32 0, i1* %WriteFullPort_0) nounwind
+
+ST_1: stg_16 [1/1] 0.00ns
+bb1:10  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str5, i32 1, [19 x i8]* @p_str12, [16 x i8]* @p_str16, i32 0, i32 0, i32* %WriteDataPort_0) nounwind
+
+ST_1: stg_17 [1/1] 0.00ns
+bb1:11  ret void
+
+ST_1: stg_18 [2/2] 2.39ns
+bb:0  call void @"matrix_mul::thread"(i1* %nResetPort, i1* %ClockPort, i1* %ReadEnablePort_0, i1* %ReadEmptyPort_0, i32* %ReadDataPort_0, i1* %WriteEnablePort_0, i1* %WriteFullPort_0, i32* %WriteDataPort_0, [90000 x i32]* %m_result, [90000 x i32]* %m_operand1, [90000 x i32]* %m_operand2)
+
+
+ <State 2>: 2.39ns
+ST_2: stg_19 [1/2] 2.39ns
+bb:0  call void @"matrix_mul::thread"(i1* %nResetPort, i1* %ClockPort, i1* %ReadEnablePort_0, i1* %ReadEmptyPort_0, i32* %ReadDataPort_0, i1* %WriteEnablePort_0, i1* %WriteFullPort_0, i32* %WriteDataPort_0, [90000 x i32]* %m_result, [90000 x i32]* %m_operand1, [90000 x i32]* %m_operand2)
+
+ST_2: stg_20 [1/1] 0.00ns
+bb:1  unreachable
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

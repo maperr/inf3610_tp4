@@ -1,0 +1,35 @@
+###################################################################
+##
+## Filename       : axis_2_sdl_v2_1_0.mpd
+## Description    : Microprocessor Peripheral Definition
+##
+###################################################################
+##  Copyright 2011 - Space Codesign Systems, Inc.
+##  All rights reserved.
+###################################################################
+
+BEGIN axis_2_sdl
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+OPTION ARCH_SUPPORT_MAP = (OTHERS=DEVELOPMENT)
+OPTION IP_GROUP = USER
+
+## Bus Interfaces
+BUS_INTERFACE BUS = AXIS, BUS_STD = AXIS, BUS_TYPE = TARGET
+PARAMETER C_AXIS_PROTOCOL = GENERIC, DT = STRING, TYPE = NON_HDL, BUS = AXIS
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER DWIDTH = 32, DT = integer
+
+PORT SDL_S_Data = "", DIR = O, VEC = [0:(DWIDTH-1)]
+PORT SDL_S_Read = "", DIR = I
+PORT SDL_S_Empty = "", DIR = O
+
+PORT AXIS_M_TDATA = TDATA, DIR = I, VEC = [DWIDTH-1:0], BUS = AXIS
+PORT AXIS_M_TVALID = TVALID, DIR = I, BUS = AXIS
+PORT AXIS_M_TREADY = TREADY, DIR = O, BUS = AXIS
+
+END
